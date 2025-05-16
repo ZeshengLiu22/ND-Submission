@@ -1,0 +1,34 @@
+RescueNet Val output
+Saving to: /data/jpk322/ClassMix/RescueNet/05-03_11-04-RescueNet_train/val/val-org-img
+
+class  0 background   IU 0.69294
+class  1 Water        IU 0.67857
+class  2 Building_No_Damage IU 0.32807
+class  3 Building_Minor_Damage IU 0.3275
+class  4 Building_Major_Damage IU 0.15942
+class  5 Building_Total_Destruction IU 0.2322
+class  6 Vehicle      IU 0.12632
+class  7 Road-Clear   IU 0.60053
+class  8 Road-Blocked IU 0.047528
+class  9 Tree         IU 0.48794
+class 10 Pool         IU 0.078089
+meanIOU: 0.3417351017808485
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+FloodNet Val Output
+Saving to: /data/jpk322/ClassMix/FloodNet/05-06_00-29-FloodNet_train/val/val-org-img
+
+class  0 Background   IU 0.012551
+class  1 Building-flooded IU 0.69005
+class  2 Building-non-flooded IU 0.5578
+class  3 Road-flooded IU 0.22631
+class  4 Road-non-flooded IU 0.68151
+class  5 Water        IU 0.50198
+class  6 Tree         IU 0.63257
+class  7 Vehicle      IU 0.45899
+class  8 Pool         IU 0.5926
+class  9 Grass        IU 0.78477
+meanIOU: 0.5139136059787304
+

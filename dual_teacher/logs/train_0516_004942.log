@@ -1,0 +1,2516 @@
+nohup: ignoring input
+/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/site-packages/torch/distributed/launch.py:178: FutureWarning: The module torch.distributed.launch is deprecated
+and will be removed in future. Use torchrun.
+Note that --use_env is set by default in torchrun.
+If your script expects `--local_rank` argument to be set, please
+change it to read from `os.environ['LOCAL_RANK']` instead. See 
+https://pytorch.org/docs/stable/distributed.html#launch-utility for 
+further instructions
+
+  warnings.warn(
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+2025-05-16 00:49:46,731 - distributed_c10d.py - INFO: Added key: store_based_barrier_key:1 to store for rank: 6
+2025-05-16 00:49:46,760 - distributed_c10d.py - INFO: Added key: store_based_barrier_key:1 to store for rank: 4
+2025-05-16 00:49:46,889 - distributed_c10d.py - INFO: Added key: store_based_barrier_key:1 to store for rank: 3
+2025-05-16 00:49:46,931 - distributed_c10d.py - INFO: Added key: store_based_barrier_key:1 to store for rank: 0
+2025-05-16 00:49:46,983 - distributed_c10d.py - INFO: Added key: store_based_barrier_key:1 to store for rank: 2
+2025-05-16 00:49:47,084 - distributed_c10d.py - INFO: Added key: store_based_barrier_key:1 to store for rank: 5
+2025-05-16 00:49:47,301 - distributed_c10d.py - INFO: Added key: store_based_barrier_key:1 to store for rank: 1
+2025-05-16 00:49:47,301 - distributed_c10d.py - INFO: Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 7 nodes.
+2025-05-16 00:49:47,308 - distributed_c10d.py - INFO: Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 7 nodes.
+2025-05-16 00:49:47,308 - distributed_c10d.py - INFO: Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 7 nodes.
+2025-05-16 00:49:47,310 - distributed_c10d.py - INFO: Rank 6: Completed store-based barrier for key:store_based_barrier_key:1 with 7 nodes.
+2025-05-16 00:49:47,310 - distributed_c10d.py - INFO: Rank 4: Completed store-based barrier for key:store_based_barrier_key:1 with 7 nodes.
+2025-05-16 00:49:47,310 - distributed_c10d.py - INFO: Rank 3: Completed store-based barrier for key:store_based_barrier_key:1 with 7 nodes.
+2025-05-16 00:49:47,311 - distributed_c10d.py - INFO: Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 7 nodes.
+Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.8.20 (default, Oct  3 2024, 15:24:27) [GCC 11.2.0]
+CUDA available: True
+GPU 0,1,2,3,4,5,6: NVIDIA RTX A5000
+CUDA_HOME: /usr
+NVCC: Build cuda_11.5.r11.5/compiler.30672275_0
+GCC: gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+PyTorch: 1.10.1+cu113
+PyTorch compiling details: PyTorch built with:
+  - GCC 7.3
+  - C++ Version: 201402
+  - Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191122 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v2.2.3 (Git Hash 7336ca9f055cf1bfa13efb658fe15dc9b41f0740)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 11.3
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86
+  - CuDNN 8.2
+  - Magma 2.5.2
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.3, CUDNN_VERSION=8.2.0, CXX_COMPILER=/opt/rh/devtoolset-7/root/usr/bin/c++, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-local-typedefs -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.10.1, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, 
+
+TorchVision: 0.11.2+cu113
+OpenCV: 4.11.0
+MMCV: 1.3.17
+MMCV Compiler: GCC 7.3
+MMCV CUDA Compiler: 11.3
+MMSegmentation: 0.11.0+868e6e7
+------------------------------------------------------------
+
+Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.8.20 (default, Oct  3 2024, 15:24:27) [GCC 11.2.0]
+CUDA available: True
+GPU 0,1,2,3,4,5,6: NVIDIA RTX A5000
+CUDA_HOME: /usr
+NVCC: Build cuda_11.5.r11.5/compiler.30672275_0
+GCC: gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+PyTorch: 1.10.1+cu113
+PyTorch compiling details: PyTorch built with:
+  - GCC 7.3
+  - C++ Version: 201402
+  - Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191122 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v2.2.3 (Git Hash 7336ca9f055cf1bfa13efb658fe15dc9b41f0740)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 11.3
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86
+  - CuDNN 8.2
+  - Magma 2.5.2
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.3, CUDNN_VERSION=8.2.0, CXX_COMPILER=/opt/rh/devtoolset-7/root/usr/bin/c++, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-local-typedefs -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.10.1, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, 
+
+TorchVision: 0.11.2+cu113
+OpenCV: 4.11.0
+MMCV: 1.3.17
+MMCV Compiler: GCC 7.3
+MMCV CUDA Compiler: 11.3
+MMSegmentation: 0.11.0+868e6e7
+------------------------------------------------------------
+
+Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.8.20 (default, Oct  3 2024, 15:24:27) [GCC 11.2.0]
+CUDA available: True
+GPU 0,1,2,3,4,5,6: NVIDIA RTX A5000
+CUDA_HOME: /usr
+NVCC: Build cuda_11.5.r11.5/compiler.30672275_0
+GCC: gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+PyTorch: 1.10.1+cu113
+PyTorch compiling details: PyTorch built with:
+  - GCC 7.3
+  - C++ Version: 201402
+  - Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191122 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v2.2.3 (Git Hash 7336ca9f055cf1bfa13efb658fe15dc9b41f0740)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 11.3
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86
+  - CuDNN 8.2
+  - Magma 2.5.2
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.3, CUDNN_VERSION=8.2.0, CXX_COMPILER=/opt/rh/devtoolset-7/root/usr/bin/c++, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-local-typedefs -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.10.1, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, 
+
+TorchVision: 0.11.2+cu113
+OpenCV: 4.11.0
+MMCV: 1.3.17
+MMCV Compiler: GCC 7.3
+MMCV CUDA Compiler: 11.3
+MMSegmentation: 0.11.0+868e6e7
+------------------------------------------------------------
+
+Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.8.20 (default, Oct  3 2024, 15:24:27) [GCC 11.2.0]
+CUDA available: True
+GPU 0,1,2,3,4,5,6: NVIDIA RTX A5000
+CUDA_HOME: /usr
+NVCC: Build cuda_11.5.r11.5/compiler.30672275_0
+GCC: gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+PyTorch: 1.10.1+cu113
+PyTorch compiling details: PyTorch built with:
+  - GCC 7.3
+  - C++ Version: 201402
+  - Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191122 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v2.2.3 (Git Hash 7336ca9f055cf1bfa13efb658fe15dc9b41f0740)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 11.3
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86
+  - CuDNN 8.2
+  - Magma 2.5.2
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.3, CUDNN_VERSION=8.2.0, CXX_COMPILER=/opt/rh/devtoolset-7/root/usr/bin/c++, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-local-typedefs -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.10.1, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, 
+
+TorchVision: 0.11.2+cu113
+OpenCV: 4.11.0
+MMCV: 1.3.17
+MMCV Compiler: GCC 7.3
+MMCV CUDA Compiler: 11.3
+MMSegmentation: 0.11.0+868e6e7
+------------------------------------------------------------
+
+Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.8.20 (default, Oct  3 2024, 15:24:27) [GCC 11.2.0]
+CUDA available: True
+GPU 0,1,2,3,4,5,6: NVIDIA RTX A5000
+CUDA_HOME: /usr
+NVCC: Build cuda_11.5.r11.5/compiler.30672275_0
+GCC: gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+PyTorch: 1.10.1+cu113
+PyTorch compiling details: PyTorch built with:
+  - GCC 7.3
+  - C++ Version: 201402
+  - Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191122 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v2.2.3 (Git Hash 7336ca9f055cf1bfa13efb658fe15dc9b41f0740)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 11.3
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86
+  - CuDNN 8.2
+  - Magma 2.5.2
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.3, CUDNN_VERSION=8.2.0, CXX_COMPILER=/opt/rh/devtoolset-7/root/usr/bin/c++, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-local-typedefs -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.10.1, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, 
+
+TorchVision: 0.11.2+cu113
+OpenCV: 4.11.0
+MMCV: 1.3.17
+MMCV Compiler: GCC 7.3
+MMCV CUDA Compiler: 11.3
+MMSegmentation: 0.11.0+868e6e7
+------------------------------------------------------------
+
+Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.8.20 (default, Oct  3 2024, 15:24:27) [GCC 11.2.0]
+CUDA available: True
+GPU 0,1,2,3,4,5,6: NVIDIA RTX A5000
+CUDA_HOME: /usr
+NVCC: Build cuda_11.5.r11.5/compiler.30672275_0
+GCC: gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+PyTorch: 1.10.1+cu113
+PyTorch compiling details: PyTorch built with:
+  - GCC 7.3
+  - C++ Version: 201402
+  - Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191122 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v2.2.3 (Git Hash 7336ca9f055cf1bfa13efb658fe15dc9b41f0740)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 11.3
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86
+  - CuDNN 8.2
+  - Magma 2.5.2
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.3, CUDNN_VERSION=8.2.0, CXX_COMPILER=/opt/rh/devtoolset-7/root/usr/bin/c++, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-local-typedefs -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.10.1, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, 
+
+TorchVision: 0.11.2+cu113
+OpenCV: 4.11.0
+MMCV: 1.3.17
+MMCV Compiler: GCC 7.3
+MMCV CUDA Compiler: 11.3
+MMSegmentation: 0.11.0+868e6e7
+------------------------------------------------------------
+
+Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.8.20 (default, Oct  3 2024, 15:24:27) [GCC 11.2.0]
+CUDA available: True
+GPU 0,1,2,3,4,5,6: NVIDIA RTX A5000
+CUDA_HOME: /usr
+NVCC: Build cuda_11.5.r11.5/compiler.30672275_0
+GCC: gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+PyTorch: 1.10.1+cu113
+PyTorch compiling details: PyTorch built with:
+  - GCC 7.3
+  - C++ Version: 201402
+  - Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191122 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v2.2.3 (Git Hash 7336ca9f055cf1bfa13efb658fe15dc9b41f0740)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 11.3
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86
+  - CuDNN 8.2
+  - Magma 2.5.2
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.3, CUDNN_VERSION=8.2.0, CXX_COMPILER=/opt/rh/devtoolset-7/root/usr/bin/c++, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wno-unused-function -Wno-unused-result -Wno-unused-local-typedefs -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.10.1, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, 
+
+TorchVision: 0.11.2+cu113
+OpenCV: 4.11.0
+MMCV: 1.3.17
+MMCV Compiler: GCC 7.3
+MMCV CUDA Compiler: 11.3
+MMSegmentation: 0.11.0+868e6e7
+------------------------------------------------------------
+
+Config:
+norm_cfg = dict(type='SyncBN', requires_grad=True)
+find_unused_parameters = True
+model = dict(
+    type='EncoderDecoder',
+    pretrained='pretrained/mit_b1.pth',
+    backbone=dict(type='mit_b1', style='pytorch'),
+    decode_head=dict(
+        type='SegFormerHead',
+        in_channels=[64, 128, 320, 512],
+        in_index=[0, 1, 2, 3],
+        feature_strides=[4, 8, 16, 32],
+        channels=128,
+        dropout_ratio=0.1,
+        num_classes=150,
+        norm_cfg=dict(type='SyncBN', requires_grad=True),
+        align_corners=False,
+        decoder_params=dict(embed_dim=256),
+        loss_decode=dict(
+            type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0)),
+    train_cfg=dict(),
+    test_cfg=dict(mode='whole'))
+dataset_type = 'RescueNetDataset'
+data_root = '/data/users/zel220/dual_teacher_zesheng/data/rescuenet'
+img_norm_cfg = dict(
+    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+crop_size = (750, 750)
+train_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+    dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+    dict(type='RandomFlip', prob=0.5),
+    dict(type='PhotoMetricDistortion'),
+    dict(
+        type='Normalize',
+        mean=[123.675, 116.28, 103.53],
+        std=[58.395, 57.12, 57.375],
+        to_rgb=True),
+    dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+    dict(type='DefaultFormatBundle'),
+    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+]
+test_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(
+        type='MultiScaleFlipAug',
+        img_scale=(750, 750),
+        flip=False,
+        transforms=[
+            dict(type='Resize', keep_ratio=False),
+            dict(type='RandomFlip'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='ImageToTensor', keys=['img']),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ])
+]
+data = dict(
+    samples_per_gpu=2,
+    workers_per_gpu=0,
+    train=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train',
+        ann_dir='annotations/train',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_l=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-l',
+        ann_dir='annotations/train-label-img-l',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_u=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-u',
+        ann_dir='annotations/train-label-img-u',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    val=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]),
+    test=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]))
+log_config = dict(
+    interval=50, hooks=[dict(type='TextLoggerHook', by_epoch=False)])
+dist_params = dict(backend='nccl')
+log_level = 'INFO'
+load_from = None
+resume_from = None
+workflow = [('train', 1)]
+cudnn_benchmark = False
+optimizer = dict(
+    type='AdamW',
+    lr=6e-05,
+    betas=(0.9, 0.999),
+    weight_decay=0.01,
+    paramwise_cfg=dict(
+        custom_keys=dict(
+            pos_block=dict(decay_mult=0.0),
+            norm=dict(decay_mult=0.0),
+            head=dict(lr_mult=10.0))))
+optimizer_config = dict()
+lr_config = dict(policy='poly', power=0.9, min_lr=0.0, by_epoch=False)
+runner = dict(type='IterBasedRunner', max_iters=160000)
+checkpoint_config = dict(by_epoch=False, interval=4000)
+evaluation = dict(interval=16000, metric='mIoU')
+scheduler = dict(
+    _delete_=True,
+    policy='poly',
+    warmup='linear',
+    warmup_iters=1500,
+    warmup_ratio=1e-06,
+    power=1.0,
+    min_lr=0.0,
+    by_epoch=False)
+work_dir = './work_dirs/segformer.b1.512x512.rescuenet.160k'
+gpu_ids = range(0, 1)
+
+Config:
+norm_cfg = dict(type='SyncBN', requires_grad=True)
+find_unused_parameters = True
+model = dict(
+    type='EncoderDecoder',
+    pretrained='pretrained/mit_b1.pth',
+    backbone=dict(type='mit_b1', style='pytorch'),
+    decode_head=dict(
+        type='SegFormerHead',
+        in_channels=[64, 128, 320, 512],
+        in_index=[0, 1, 2, 3],
+        feature_strides=[4, 8, 16, 32],
+        channels=128,
+        dropout_ratio=0.1,
+        num_classes=150,
+        norm_cfg=dict(type='SyncBN', requires_grad=True),
+        align_corners=False,
+        decoder_params=dict(embed_dim=256),
+        loss_decode=dict(
+            type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0)),
+    train_cfg=dict(),
+    test_cfg=dict(mode='whole'))
+dataset_type = 'RescueNetDataset'
+data_root = '/data/users/zel220/dual_teacher_zesheng/data/rescuenet'
+img_norm_cfg = dict(
+    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+crop_size = (750, 750)
+train_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+    dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+    dict(type='RandomFlip', prob=0.5),
+    dict(type='PhotoMetricDistortion'),
+    dict(
+        type='Normalize',
+        mean=[123.675, 116.28, 103.53],
+        std=[58.395, 57.12, 57.375],
+        to_rgb=True),
+    dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+    dict(type='DefaultFormatBundle'),
+    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+]
+test_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(
+        type='MultiScaleFlipAug',
+        img_scale=(750, 750),
+        flip=False,
+        transforms=[
+            dict(type='Resize', keep_ratio=False),
+            dict(type='RandomFlip'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='ImageToTensor', keys=['img']),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ])
+]
+data = dict(
+    samples_per_gpu=2,
+    workers_per_gpu=0,
+    train=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train',
+        ann_dir='annotations/train',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_l=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-l',
+        ann_dir='annotations/train-label-img-l',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_u=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-u',
+        ann_dir='annotations/train-label-img-u',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    val=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]),
+    test=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]))
+log_config = dict(
+    interval=50, hooks=[dict(type='TextLoggerHook', by_epoch=False)])
+dist_params = dict(backend='nccl')
+log_level = 'INFO'
+load_from = None
+resume_from = None
+workflow = [('train', 1)]
+cudnn_benchmark = False
+optimizer = dict(
+    type='AdamW',
+    lr=6e-05,
+    betas=(0.9, 0.999),
+    weight_decay=0.01,
+    paramwise_cfg=dict(
+        custom_keys=dict(
+            pos_block=dict(decay_mult=0.0),
+            norm=dict(decay_mult=0.0),
+            head=dict(lr_mult=10.0))))
+optimizer_config = dict()
+lr_config = dict(policy='poly', power=0.9, min_lr=0.0, by_epoch=False)
+runner = dict(type='IterBasedRunner', max_iters=160000)
+checkpoint_config = dict(by_epoch=False, interval=4000)
+evaluation = dict(interval=16000, metric='mIoU')
+scheduler = dict(
+    _delete_=True,
+    policy='poly',
+    warmup='linear',
+    warmup_iters=1500,
+    warmup_ratio=1e-06,
+    power=1.0,
+    min_lr=0.0,
+    by_epoch=False)
+work_dir = './work_dirs/segformer.b1.512x512.rescuenet.160k'
+gpu_ids = range(0, 1)
+
+Config:
+norm_cfg = dict(type='SyncBN', requires_grad=True)
+find_unused_parameters = True
+model = dict(
+    type='EncoderDecoder',
+    pretrained='pretrained/mit_b1.pth',
+    backbone=dict(type='mit_b1', style='pytorch'),
+    decode_head=dict(
+        type='SegFormerHead',
+        in_channels=[64, 128, 320, 512],
+        in_index=[0, 1, 2, 3],
+        feature_strides=[4, 8, 16, 32],
+        channels=128,
+        dropout_ratio=0.1,
+        num_classes=150,
+        norm_cfg=dict(type='SyncBN', requires_grad=True),
+        align_corners=False,
+        decoder_params=dict(embed_dim=256),
+        loss_decode=dict(
+            type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0)),
+    train_cfg=dict(),
+    test_cfg=dict(mode='whole'))
+dataset_type = 'RescueNetDataset'
+data_root = '/data/users/zel220/dual_teacher_zesheng/data/rescuenet'
+img_norm_cfg = dict(
+    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+crop_size = (750, 750)
+train_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+    dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+    dict(type='RandomFlip', prob=0.5),
+    dict(type='PhotoMetricDistortion'),
+    dict(
+        type='Normalize',
+        mean=[123.675, 116.28, 103.53],
+        std=[58.395, 57.12, 57.375],
+        to_rgb=True),
+    dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+    dict(type='DefaultFormatBundle'),
+    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+]
+test_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(
+        type='MultiScaleFlipAug',
+        img_scale=(750, 750),
+        flip=False,
+        transforms=[
+            dict(type='Resize', keep_ratio=False),
+            dict(type='RandomFlip'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='ImageToTensor', keys=['img']),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ])
+]
+data = dict(
+    samples_per_gpu=2,
+    workers_per_gpu=0,
+    train=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train',
+        ann_dir='annotations/train',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_l=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-l',
+        ann_dir='annotations/train-label-img-l',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_u=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-u',
+        ann_dir='annotations/train-label-img-u',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    val=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]),
+    test=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]))
+log_config = dict(
+    interval=50, hooks=[dict(type='TextLoggerHook', by_epoch=False)])
+dist_params = dict(backend='nccl')
+log_level = 'INFO'
+load_from = None
+resume_from = None
+workflow = [('train', 1)]
+cudnn_benchmark = False
+optimizer = dict(
+    type='AdamW',
+    lr=6e-05,
+    betas=(0.9, 0.999),
+    weight_decay=0.01,
+    paramwise_cfg=dict(
+        custom_keys=dict(
+            pos_block=dict(decay_mult=0.0),
+            norm=dict(decay_mult=0.0),
+            head=dict(lr_mult=10.0))))
+optimizer_config = dict()
+lr_config = dict(policy='poly', power=0.9, min_lr=0.0, by_epoch=False)
+runner = dict(type='IterBasedRunner', max_iters=160000)
+checkpoint_config = dict(by_epoch=False, interval=4000)
+evaluation = dict(interval=16000, metric='mIoU')
+scheduler = dict(
+    _delete_=True,
+    policy='poly',
+    warmup='linear',
+    warmup_iters=1500,
+    warmup_ratio=1e-06,
+    power=1.0,
+    min_lr=0.0,
+    by_epoch=False)
+work_dir = './work_dirs/segformer.b1.512x512.rescuenet.160k'
+gpu_ids = range(0, 1)
+
+Config:
+norm_cfg = dict(type='SyncBN', requires_grad=True)
+find_unused_parameters = True
+model = dict(
+    type='EncoderDecoder',
+    pretrained='pretrained/mit_b1.pth',
+    backbone=dict(type='mit_b1', style='pytorch'),
+    decode_head=dict(
+        type='SegFormerHead',
+        in_channels=[64, 128, 320, 512],
+        in_index=[0, 1, 2, 3],
+        feature_strides=[4, 8, 16, 32],
+        channels=128,
+        dropout_ratio=0.1,
+        num_classes=150,
+        norm_cfg=dict(type='SyncBN', requires_grad=True),
+        align_corners=False,
+        decoder_params=dict(embed_dim=256),
+        loss_decode=dict(
+            type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0)),
+    train_cfg=dict(),
+    test_cfg=dict(mode='whole'))
+dataset_type = 'RescueNetDataset'
+data_root = '/data/users/zel220/dual_teacher_zesheng/data/rescuenet'
+img_norm_cfg = dict(
+    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+crop_size = (750, 750)
+train_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+    dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+    dict(type='RandomFlip', prob=0.5),
+    dict(type='PhotoMetricDistortion'),
+    dict(
+        type='Normalize',
+        mean=[123.675, 116.28, 103.53],
+        std=[58.395, 57.12, 57.375],
+        to_rgb=True),
+    dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+    dict(type='DefaultFormatBundle'),
+    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+]
+test_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(
+        type='MultiScaleFlipAug',
+        img_scale=(750, 750),
+        flip=False,
+        transforms=[
+            dict(type='Resize', keep_ratio=False),
+            dict(type='RandomFlip'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='ImageToTensor', keys=['img']),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ])
+]
+data = dict(
+    samples_per_gpu=2,
+    workers_per_gpu=0,
+    train=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train',
+        ann_dir='annotations/train',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_l=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-l',
+        ann_dir='annotations/train-label-img-l',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_u=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-u',
+        ann_dir='annotations/train-label-img-u',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    val=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]),
+    test=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]))
+log_config = dict(
+    interval=50, hooks=[dict(type='TextLoggerHook', by_epoch=False)])
+dist_params = dict(backend='nccl')
+log_level = 'INFO'
+load_from = None
+resume_from = None
+workflow = [('train', 1)]
+cudnn_benchmark = False
+optimizer = dict(
+    type='AdamW',
+    lr=6e-05,
+    betas=(0.9, 0.999),
+    weight_decay=0.01,
+    paramwise_cfg=dict(
+        custom_keys=dict(
+            pos_block=dict(decay_mult=0.0),
+            norm=dict(decay_mult=0.0),
+            head=dict(lr_mult=10.0))))
+optimizer_config = dict()
+lr_config = dict(policy='poly', power=0.9, min_lr=0.0, by_epoch=False)
+runner = dict(type='IterBasedRunner', max_iters=160000)
+checkpoint_config = dict(by_epoch=False, interval=4000)
+evaluation = dict(interval=16000, metric='mIoU')
+scheduler = dict(
+    _delete_=True,
+    policy='poly',
+    warmup='linear',
+    warmup_iters=1500,
+    warmup_ratio=1e-06,
+    power=1.0,
+    min_lr=0.0,
+    by_epoch=False)
+work_dir = './work_dirs/segformer.b1.512x512.rescuenet.160k'
+gpu_ids = range(0, 1)
+
+Config:
+norm_cfg = dict(type='SyncBN', requires_grad=True)
+find_unused_parameters = True
+model = dict(
+    type='EncoderDecoder',
+    pretrained='pretrained/mit_b1.pth',
+    backbone=dict(type='mit_b1', style='pytorch'),
+    decode_head=dict(
+        type='SegFormerHead',
+        in_channels=[64, 128, 320, 512],
+        in_index=[0, 1, 2, 3],
+        feature_strides=[4, 8, 16, 32],
+        channels=128,
+        dropout_ratio=0.1,
+        num_classes=150,
+        norm_cfg=dict(type='SyncBN', requires_grad=True),
+        align_corners=False,
+        decoder_params=dict(embed_dim=256),
+        loss_decode=dict(
+            type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0)),
+    train_cfg=dict(),
+    test_cfg=dict(mode='whole'))
+dataset_type = 'RescueNetDataset'
+data_root = '/data/users/zel220/dual_teacher_zesheng/data/rescuenet'
+img_norm_cfg = dict(
+    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+crop_size = (750, 750)
+train_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+    dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+    dict(type='RandomFlip', prob=0.5),
+    dict(type='PhotoMetricDistortion'),
+    dict(
+        type='Normalize',
+        mean=[123.675, 116.28, 103.53],
+        std=[58.395, 57.12, 57.375],
+        to_rgb=True),
+    dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+    dict(type='DefaultFormatBundle'),
+    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+]
+test_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(
+        type='MultiScaleFlipAug',
+        img_scale=(750, 750),
+        flip=False,
+        transforms=[
+            dict(type='Resize', keep_ratio=False),
+            dict(type='RandomFlip'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='ImageToTensor', keys=['img']),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ])
+]
+data = dict(
+    samples_per_gpu=2,
+    workers_per_gpu=0,
+    train=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train',
+        ann_dir='annotations/train',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_l=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-l',
+        ann_dir='annotations/train-label-img-l',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_u=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-u',
+        ann_dir='annotations/train-label-img-u',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    val=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]),
+    test=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]))
+log_config = dict(
+    interval=50, hooks=[dict(type='TextLoggerHook', by_epoch=False)])
+dist_params = dict(backend='nccl')
+log_level = 'INFO'
+load_from = None
+resume_from = None
+workflow = [('train', 1)]
+cudnn_benchmark = False
+optimizer = dict(
+    type='AdamW',
+    lr=6e-05,
+    betas=(0.9, 0.999),
+    weight_decay=0.01,
+    paramwise_cfg=dict(
+        custom_keys=dict(
+            pos_block=dict(decay_mult=0.0),
+            norm=dict(decay_mult=0.0),
+            head=dict(lr_mult=10.0))))
+optimizer_config = dict()
+lr_config = dict(policy='poly', power=0.9, min_lr=0.0, by_epoch=False)
+runner = dict(type='IterBasedRunner', max_iters=160000)
+checkpoint_config = dict(by_epoch=False, interval=4000)
+evaluation = dict(interval=16000, metric='mIoU')
+scheduler = dict(
+    _delete_=True,
+    policy='poly',
+    warmup='linear',
+    warmup_iters=1500,
+    warmup_ratio=1e-06,
+    power=1.0,
+    min_lr=0.0,
+    by_epoch=False)
+work_dir = './work_dirs/segformer.b1.512x512.rescuenet.160k'
+gpu_ids = range(0, 1)
+
+Config:
+norm_cfg = dict(type='SyncBN', requires_grad=True)
+find_unused_parameters = True
+model = dict(
+    type='EncoderDecoder',
+    pretrained='pretrained/mit_b1.pth',
+    backbone=dict(type='mit_b1', style='pytorch'),
+    decode_head=dict(
+        type='SegFormerHead',
+        in_channels=[64, 128, 320, 512],
+        in_index=[0, 1, 2, 3],
+        feature_strides=[4, 8, 16, 32],
+        channels=128,
+        dropout_ratio=0.1,
+        num_classes=150,
+        norm_cfg=dict(type='SyncBN', requires_grad=True),
+        align_corners=False,
+        decoder_params=dict(embed_dim=256),
+        loss_decode=dict(
+            type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0)),
+    train_cfg=dict(),
+    test_cfg=dict(mode='whole'))
+dataset_type = 'RescueNetDataset'
+data_root = '/data/users/zel220/dual_teacher_zesheng/data/rescuenet'
+img_norm_cfg = dict(
+    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+crop_size = (750, 750)
+train_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+    dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+    dict(type='RandomFlip', prob=0.5),
+    dict(type='PhotoMetricDistortion'),
+    dict(
+        type='Normalize',
+        mean=[123.675, 116.28, 103.53],
+        std=[58.395, 57.12, 57.375],
+        to_rgb=True),
+    dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+    dict(type='DefaultFormatBundle'),
+    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+]
+test_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(
+        type='MultiScaleFlipAug',
+        img_scale=(750, 750),
+        flip=False,
+        transforms=[
+            dict(type='Resize', keep_ratio=False),
+            dict(type='RandomFlip'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='ImageToTensor', keys=['img']),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ])
+]
+data = dict(
+    samples_per_gpu=2,
+    workers_per_gpu=0,
+    train=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train',
+        ann_dir='annotations/train',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_l=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-l',
+        ann_dir='annotations/train-label-img-l',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_u=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-u',
+        ann_dir='annotations/train-label-img-u',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    val=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]),
+    test=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]))
+log_config = dict(
+    interval=50, hooks=[dict(type='TextLoggerHook', by_epoch=False)])
+dist_params = dict(backend='nccl')
+log_level = 'INFO'
+load_from = None
+resume_from = None
+workflow = [('train', 1)]
+cudnn_benchmark = False
+optimizer = dict(
+    type='AdamW',
+    lr=6e-05,
+    betas=(0.9, 0.999),
+    weight_decay=0.01,
+    paramwise_cfg=dict(
+        custom_keys=dict(
+            pos_block=dict(decay_mult=0.0),
+            norm=dict(decay_mult=0.0),
+            head=dict(lr_mult=10.0))))
+optimizer_config = dict()
+lr_config = dict(policy='poly', power=0.9, min_lr=0.0, by_epoch=False)
+runner = dict(type='IterBasedRunner', max_iters=160000)
+checkpoint_config = dict(by_epoch=False, interval=4000)
+evaluation = dict(interval=16000, metric='mIoU')
+scheduler = dict(
+    _delete_=True,
+    policy='poly',
+    warmup='linear',
+    warmup_iters=1500,
+    warmup_ratio=1e-06,
+    power=1.0,
+    min_lr=0.0,
+    by_epoch=False)
+work_dir = './work_dirs/segformer.b1.512x512.rescuenet.160k'
+gpu_ids = range(0, 1)
+
+Config:
+norm_cfg = dict(type='SyncBN', requires_grad=True)
+find_unused_parameters = True
+model = dict(
+    type='EncoderDecoder',
+    pretrained='pretrained/mit_b1.pth',
+    backbone=dict(type='mit_b1', style='pytorch'),
+    decode_head=dict(
+        type='SegFormerHead',
+        in_channels=[64, 128, 320, 512],
+        in_index=[0, 1, 2, 3],
+        feature_strides=[4, 8, 16, 32],
+        channels=128,
+        dropout_ratio=0.1,
+        num_classes=150,
+        norm_cfg=dict(type='SyncBN', requires_grad=True),
+        align_corners=False,
+        decoder_params=dict(embed_dim=256),
+        loss_decode=dict(
+            type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0)),
+    train_cfg=dict(),
+    test_cfg=dict(mode='whole'))
+dataset_type = 'RescueNetDataset'
+data_root = '/data/users/zel220/dual_teacher_zesheng/data/rescuenet'
+img_norm_cfg = dict(
+    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+crop_size = (750, 750)
+train_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+    dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+    dict(type='RandomFlip', prob=0.5),
+    dict(type='PhotoMetricDistortion'),
+    dict(
+        type='Normalize',
+        mean=[123.675, 116.28, 103.53],
+        std=[58.395, 57.12, 57.375],
+        to_rgb=True),
+    dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+    dict(type='DefaultFormatBundle'),
+    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+]
+test_pipeline = [
+    dict(type='LoadImageFromFile'),
+    dict(type='LoadAnnotations', reduce_zero_label=False),
+    dict(
+        type='MultiScaleFlipAug',
+        img_scale=(750, 750),
+        flip=False,
+        transforms=[
+            dict(type='Resize', keep_ratio=False),
+            dict(type='RandomFlip'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='ImageToTensor', keys=['img']),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ])
+]
+data = dict(
+    samples_per_gpu=2,
+    workers_per_gpu=0,
+    train=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train',
+        ann_dir='annotations/train',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_l=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-l',
+        ann_dir='annotations/train-label-img-l',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    train_semi_u=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/train-org-img-u',
+        ann_dir='annotations/train-label-img-u',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(type='Resize', img_scale=(2048, 512), ratio_range=(0.5, 2.0)),
+            dict(type='RandomCrop', crop_size=(750, 750), cat_max_ratio=0.75),
+            dict(type='RandomFlip', prob=0.5),
+            dict(type='PhotoMetricDistortion'),
+            dict(
+                type='Normalize',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='Pad', size=(750, 750), pad_val=0, seg_pad_val=255),
+            dict(type='DefaultFormatBundle'),
+            dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+        ]),
+    val=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]),
+    test=dict(
+        type='RescueNetDataset',
+        data_root='/data/users/zel220/dual_teacher_zesheng/data/rescuenet',
+        img_dir='images/val-org-img',
+        ann_dir='annotations/val-label-img',
+        pipeline=[
+            dict(type='LoadImageFromFile'),
+            dict(type='LoadAnnotations', reduce_zero_label=False),
+            dict(
+                type='MultiScaleFlipAug',
+                img_scale=(750, 750),
+                flip=False,
+                transforms=[
+                    dict(type='Resize', keep_ratio=False),
+                    dict(type='RandomFlip'),
+                    dict(
+                        type='Normalize',
+                        mean=[123.675, 116.28, 103.53],
+                        std=[58.395, 57.12, 57.375],
+                        to_rgb=True),
+                    dict(type='ImageToTensor', keys=['img']),
+                    dict(type='Collect', keys=['img', 'gt_semantic_seg'])
+                ])
+        ]))
+log_config = dict(
+    interval=50, hooks=[dict(type='TextLoggerHook', by_epoch=False)])
+dist_params = dict(backend='nccl')
+log_level = 'INFO'
+load_from = None
+resume_from = None
+workflow = [('train', 1)]
+cudnn_benchmark = False
+optimizer = dict(
+    type='AdamW',
+    lr=6e-05,
+    betas=(0.9, 0.999),
+    weight_decay=0.01,
+    paramwise_cfg=dict(
+        custom_keys=dict(
+            pos_block=dict(decay_mult=0.0),
+            norm=dict(decay_mult=0.0),
+            head=dict(lr_mult=10.0))))
+optimizer_config = dict()
+lr_config = dict(policy='poly', power=0.9, min_lr=0.0, by_epoch=False)
+runner = dict(type='IterBasedRunner', max_iters=160000)
+checkpoint_config = dict(by_epoch=False, interval=4000)
+evaluation = dict(interval=16000, metric='mIoU')
+scheduler = dict(
+    _delete_=True,
+    policy='poly',
+    warmup='linear',
+    warmup_iters=1500,
+    warmup_ratio=1e-06,
+    power=1.0,
+    min_lr=0.0,
+    by_epoch=False)
+work_dir = './work_dirs/segformer.b1.512x512.rescuenet.160k'
+gpu_ids = range(0, 1)
+
+trainable_params: 13685707
+[Epoch 0] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:3.37432 Best mIOU:3.37432 on epoch 0
+Class 0 IoU: 0.02579
+Class 1 IoU: 0.11782
+Class 2 IoU: 0.00499
+Class 3 IoU: 0.01171
+Class 4 IoU: 0.01605
+Class 5 IoU: 0.00032
+Class 6 IoU: 0.00060
+Class 7 IoU: 0.01852
+Class 8 IoU: 0.01216
+Class 9 IoU: 0.16266
+Class 10 IoU: 0.00056
+[Epoch 1] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:11.27814 Best mIOU:11.27814 on epoch 1
+Class 0 IoU: 0.47446
+Class 1 IoU: 0.24148
+Class 2 IoU: 0.01545
+Class 3 IoU: 0.00315
+Class 4 IoU: 0.01039
+Class 5 IoU: 0.00007
+Class 6 IoU: 0.00006
+Class 7 IoU: 0.03244
+Class 8 IoU: 0.00921
+Class 9 IoU: 0.45338
+Class 10 IoU: 0.00051
+[Epoch 2] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:14.73194 Best mIOU:14.73194 on epoch 2
+Class 0 IoU: 0.60027
+Class 1 IoU: 0.31282
+Class 2 IoU: 0.03020
+Class 3 IoU: 0.00011
+Class 4 IoU: 0.00080
+Class 5 IoU: 0.00001
+Class 6 IoU: 0.00000
+Class 7 IoU: 0.04471
+Class 8 IoU: 0.00052
+Class 9 IoU: 0.63108
+Class 10 IoU: 0.00000
+[Epoch 3] [iter:32] Validation:
+mIoU:12.81463 Best mIOU:14.73194 on epoch 2
+Class 0 IoU: 0.59872
+Class 1 IoU: 0.10934
+Class 2 IoU: 0.01287
+Class 3 IoU: 0.00000
+Class 4 IoU: 0.00000
+Class 5 IoU: 0.00000
+Class 6 IoU: 0.00000
+Class 7 IoU: 0.02423
+Class 8 IoU: 0.00000
+Class 9 IoU: 0.66445
+Class 10 IoU: 0.00000
+[Epoch 4] [iter:32] Validation:
+mIoU:13.58133 Best mIOU:14.73194 on epoch 2
+Class 0 IoU: 0.60697
+Class 1 IoU: 0.15937
+Class 2 IoU: 0.01910
+Class 3 IoU: 0.00000
+Class 4 IoU: 0.00000
+Class 5 IoU: 0.00000
+Class 6 IoU: 0.00000
+Class 7 IoU: 0.04271
+Class 8 IoU: 0.00000
+Class 9 IoU: 0.66580
+Class 10 IoU: 0.00000
+[Epoch 5] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:23.68728 Best mIOU:23.68728 on epoch 5
+Class 0 IoU: 0.68323
+Class 1 IoU: 0.47911
+Class 2 IoU: 0.25298
+Class 3 IoU: 0.03772
+Class 4 IoU: 0.00003
+Class 5 IoU: 0.00000
+Class 6 IoU: 0.00000
+Class 7 IoU: 0.45455
+Class 8 IoU: 0.00000
+Class 9 IoU: 0.69798
+Class 10 IoU: 0.00000
+[Epoch 6] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:23.78432 Best mIOU:23.78432 on epoch 6
+Class 0 IoU: 0.68201
+Class 1 IoU: 0.49169
+Class 2 IoU: 0.29900
+Class 3 IoU: 0.03108
+Class 4 IoU: 0.00000
+Class 5 IoU: 0.00000
+Class 6 IoU: 0.00000
+Class 7 IoU: 0.41482
+Class 8 IoU: 0.00000
+Class 9 IoU: 0.69768
+Class 10 IoU: 0.00000
+[Epoch 7] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:27.00410 Best mIOU:27.00410 on epoch 7
+Class 0 IoU: 0.70489
+Class 1 IoU: 0.56492
+Class 2 IoU: 0.32137
+Class 3 IoU: 0.16768
+Class 4 IoU: 0.00158
+Class 5 IoU: 0.00000
+Class 6 IoU: 0.00000
+Class 7 IoU: 0.50323
+Class 8 IoU: 0.00000
+Class 9 IoU: 0.70677
+Class 10 IoU: 0.00000
+[Epoch 8] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:27.59912 Best mIOU:27.59912 on epoch 8
+Class 0 IoU: 0.71303
+Class 1 IoU: 0.55828
+Class 2 IoU: 0.32238
+Class 3 IoU: 0.17215
+Class 4 IoU: 0.00363
+Class 5 IoU: 0.00000
+Class 6 IoU: 0.00000
+Class 7 IoU: 0.55548
+Class 8 IoU: 0.00000
+Class 9 IoU: 0.71095
+Class 10 IoU: 0.00000
+[Epoch 9] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:30.09178 Best mIOU:30.09178 on epoch 9
+Class 0 IoU: 0.73021
+Class 1 IoU: 0.60842
+Class 2 IoU: 0.34551
+Class 3 IoU: 0.27201
+Class 4 IoU: 0.01899
+Class 5 IoU: 0.00003
+Class 6 IoU: 0.00000
+Class 7 IoU: 0.62322
+Class 8 IoU: 0.00000
+Class 9 IoU: 0.71170
+Class 10 IoU: 0.00000
+[Epoch 10] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:30.29335 Best mIOU:30.29335 on epoch 10
+Class 0 IoU: 0.73572
+Class 1 IoU: 0.59960
+Class 2 IoU: 0.32760
+Class 3 IoU: 0.30772
+Class 4 IoU: 0.01019
+Class 5 IoU: 0.00100
+Class 6 IoU: 0.00036
+Class 7 IoU: 0.63153
+Class 8 IoU: 0.00007
+Class 9 IoU: 0.71849
+Class 10 IoU: 0.00000
+[Epoch 11] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:31.15788 Best mIOU:31.15788 on epoch 11
+Class 0 IoU: 0.73165
+Class 1 IoU: 0.62641
+Class 2 IoU: 0.37011
+Class 3 IoU: 0.29509
+Class 4 IoU: 0.04806
+Class 5 IoU: 0.00119
+Class 6 IoU: 0.00416
+Class 7 IoU: 0.64837
+Class 8 IoU: 0.00120
+Class 9 IoU: 0.70111
+Class 10 IoU: 0.00000
+[Epoch 12] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:32.34606 Best mIOU:32.34606 on epoch 12
+Class 0 IoU: 0.74908
+Class 1 IoU: 0.65145
+Class 2 IoU: 0.35644
+Class 3 IoU: 0.34455
+Class 4 IoU: 0.05641
+Class 5 IoU: 0.01204
+Class 6 IoU: 0.00953
+Class 7 IoU: 0.65446
+Class 8 IoU: 0.00829
+Class 9 IoU: 0.71583
+Class 10 IoU: 0.00000
+[Epoch 13] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:32.89401 Best mIOU:32.89401 on epoch 13
+Class 0 IoU: 0.74845
+Class 1 IoU: 0.64392
+Class 2 IoU: 0.36970
+Class 3 IoU: 0.32933
+Class 4 IoU: 0.09075
+Class 5 IoU: 0.01449
+Class 6 IoU: 0.02726
+Class 7 IoU: 0.66591
+Class 8 IoU: 0.01786
+Class 9 IoU: 0.71067
+Class 10 IoU: 0.00000
+[Epoch 14] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:33.74958 Best mIOU:33.74958 on epoch 14
+Class 0 IoU: 0.75107
+Class 1 IoU: 0.65631
+Class 2 IoU: 0.36720
+Class 3 IoU: 0.32139
+Class 4 IoU: 0.12413
+Class 5 IoU: 0.03896
+Class 6 IoU: 0.04256
+Class 7 IoU: 0.67282
+Class 8 IoU: 0.02891
+Class 9 IoU: 0.70911
+Class 10 IoU: 0.00000
+[Epoch 15] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:36.06645 Best mIOU:36.06645 on epoch 15
+Class 0 IoU: 0.74821
+Class 1 IoU: 0.66406
+Class 2 IoU: 0.38897
+Class 3 IoU: 0.31831
+Class 4 IoU: 0.18721
+Class 5 IoU: 0.09209
+Class 6 IoU: 0.13156
+Class 7 IoU: 0.67110
+Class 8 IoU: 0.06858
+Class 9 IoU: 0.69722
+Class 10 IoU: 0.00000
+[Epoch 16] [iter:32] Validation:
+mIoU:34.84057 Best mIOU:36.06645 on epoch 15
+Class 0 IoU: 0.74801
+Class 1 IoU: 0.64712
+Class 2 IoU: 0.37497
+Class 3 IoU: 0.33511
+Class 4 IoU: 0.12598
+Class 5 IoU: 0.06398
+Class 6 IoU: 0.11726
+Class 7 IoU: 0.68453
+Class 8 IoU: 0.04396
+Class 9 IoU: 0.69153
+Class 10 IoU: 0.00000
+[Epoch 17] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:38.08182 Best mIOU:38.08182 on epoch 17
+Class 0 IoU: 0.75716
+Class 1 IoU: 0.67974
+Class 2 IoU: 0.37511
+Class 3 IoU: 0.34491
+Class 4 IoU: 0.18905
+Class 5 IoU: 0.11596
+Class 6 IoU: 0.24687
+Class 7 IoU: 0.69462
+Class 8 IoU: 0.08904
+Class 9 IoU: 0.69653
+Class 10 IoU: 0.00000
+[Epoch 18] [iter:32] Validation:
+mIoU:38.05293 Best mIOU:38.08182 on epoch 17
+Class 0 IoU: 0.75368
+Class 1 IoU: 0.66167
+Class 2 IoU: 0.40408
+Class 3 IoU: 0.32556
+Class 4 IoU: 0.19308
+Class 5 IoU: 0.13140
+Class 6 IoU: 0.23417
+Class 7 IoU: 0.69311
+Class 8 IoU: 0.08754
+Class 9 IoU: 0.70154
+Class 10 IoU: 0.00000
+[Epoch 19] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:39.75973 Best mIOU:39.75973 on epoch 19
+Class 0 IoU: 0.76632
+Class 1 IoU: 0.67209
+Class 2 IoU: 0.38237
+Class 3 IoU: 0.35827
+Class 4 IoU: 0.18010
+Class 5 IoU: 0.18383
+Class 6 IoU: 0.32347
+Class 7 IoU: 0.69932
+Class 8 IoU: 0.09271
+Class 9 IoU: 0.71508
+Class 10 IoU: 0.00000
+[Epoch 20] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:41.48944 Best mIOU:41.48944 on epoch 20
+Class 0 IoU: 0.77239
+Class 1 IoU: 0.68088
+Class 2 IoU: 0.39718
+Class 3 IoU: 0.35114
+Class 4 IoU: 0.23556
+Class 5 IoU: 0.23265
+Class 6 IoU: 0.35194
+Class 7 IoU: 0.70089
+Class 8 IoU: 0.12498
+Class 9 IoU: 0.71623
+Class 10 IoU: 0.00000
+[Epoch 21] [iter:32] Validation:
+mIoU:41.36805 Best mIOU:41.48944 on epoch 20
+Class 0 IoU: 0.78022
+Class 1 IoU: 0.68222
+Class 2 IoU: 0.40429
+Class 3 IoU: 0.36249
+Class 4 IoU: 0.18965
+Class 5 IoU: 0.18729
+Class 6 IoU: 0.38355
+Class 7 IoU: 0.71386
+Class 8 IoU: 0.11712
+Class 9 IoU: 0.72979
+Class 10 IoU: 0.00000
+[Epoch 22] [iter:32] Validation:
+mIoU:41.24751 Best mIOU:41.48944 on epoch 20
+Class 0 IoU: 0.77288
+Class 1 IoU: 0.69335
+Class 2 IoU: 0.41409
+Class 3 IoU: 0.35111
+Class 4 IoU: 0.22156
+Class 5 IoU: 0.15607
+Class 6 IoU: 0.36792
+Class 7 IoU: 0.71989
+Class 8 IoU: 0.12512
+Class 9 IoU: 0.71523
+Class 10 IoU: 0.00000
+[Epoch 23] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:42.74958 Best mIOU:42.74958 on epoch 23
+Class 0 IoU: 0.77719
+Class 1 IoU: 0.69496
+Class 2 IoU: 0.42634
+Class 3 IoU: 0.30948
+Class 4 IoU: 0.26002
+Class 5 IoU: 0.23654
+Class 6 IoU: 0.41953
+Class 7 IoU: 0.72277
+Class 8 IoU: 0.14573
+Class 9 IoU: 0.70988
+Class 10 IoU: 0.00000
+[Epoch 24] [iter:32] Validation:
+mIoU:42.36150 Best mIOU:42.74958 on epoch 23
+Class 0 IoU: 0.77858
+Class 1 IoU: 0.68240
+Class 2 IoU: 0.41617
+Class 3 IoU: 0.34176
+Class 4 IoU: 0.25193
+Class 5 IoU: 0.23711
+Class 6 IoU: 0.39944
+Class 7 IoU: 0.72039
+Class 8 IoU: 0.12458
+Class 9 IoU: 0.70741
+Class 10 IoU: 0.00000
+[Epoch 25] [iter:32] Validation:
+mIoU:41.84263 Best mIOU:42.74958 on epoch 23
+Class 0 IoU: 0.77839
+Class 1 IoU: 0.68499
+Class 2 IoU: 0.42723
+Class 3 IoU: 0.32528
+Class 4 IoU: 0.26157
+Class 5 IoU: 0.20680
+Class 6 IoU: 0.38816
+Class 7 IoU: 0.71435
+Class 8 IoU: 0.10707
+Class 9 IoU: 0.70885
+Class 10 IoU: 0.00000
+[Epoch 26] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:43.09761 Best mIOU:43.09761 on epoch 26
+Class 0 IoU: 0.78585
+Class 1 IoU: 0.68296
+Class 2 IoU: 0.42352
+Class 3 IoU: 0.34921
+Class 4 IoU: 0.29122
+Class 5 IoU: 0.23232
+Class 6 IoU: 0.38608
+Class 7 IoU: 0.72210
+Class 8 IoU: 0.13457
+Class 9 IoU: 0.73290
+Class 10 IoU: 0.00000
+[Epoch 27] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:43.87789 Best mIOU:43.87789 on epoch 27
+Class 0 IoU: 0.79082
+Class 1 IoU: 0.70282
+Class 2 IoU: 0.43952
+Class 3 IoU: 0.33198
+Class 4 IoU: 0.27224
+Class 5 IoU: 0.25225
+Class 6 IoU: 0.42904
+Class 7 IoU: 0.72158
+Class 8 IoU: 0.15073
+Class 9 IoU: 0.73559
+Class 10 IoU: 0.00000
+[Epoch 28] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:44.59872 Best mIOU:44.59872 on epoch 28
+Class 0 IoU: 0.79160
+Class 1 IoU: 0.72059
+Class 2 IoU: 0.39288
+Class 3 IoU: 0.38863
+Class 4 IoU: 0.28403
+Class 5 IoU: 0.26191
+Class 6 IoU: 0.43528
+Class 7 IoU: 0.73625
+Class 8 IoU: 0.15248
+Class 9 IoU: 0.74222
+Class 10 IoU: 0.00000
+[Epoch 29] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:44.98750 Best mIOU:44.98750 on epoch 29
+Class 0 IoU: 0.79162
+Class 1 IoU: 0.72024
+Class 2 IoU: 0.44471
+Class 3 IoU: 0.36834
+Class 4 IoU: 0.28741
+Class 5 IoU: 0.26374
+Class 6 IoU: 0.43818
+Class 7 IoU: 0.72978
+Class 8 IoU: 0.15635
+Class 9 IoU: 0.74825
+Class 10 IoU: 0.00000
+[Epoch 30] [iter:32] Validation:
+mIoU:44.24802 Best mIOU:44.98750 on epoch 29
+Class 0 IoU: 0.78274
+Class 1 IoU: 0.72418
+Class 2 IoU: 0.46568
+Class 3 IoU: 0.34141
+Class 4 IoU: 0.29667
+Class 5 IoU: 0.24515
+Class 6 IoU: 0.40579
+Class 7 IoU: 0.72351
+Class 8 IoU: 0.15745
+Class 9 IoU: 0.72470
+Class 10 IoU: 0.00000
+[Epoch 31] [iter:32] Validation:
+mIoU:44.45409 Best mIOU:44.98750 on epoch 29
+Class 0 IoU: 0.79016
+Class 1 IoU: 0.71634
+Class 2 IoU: 0.45466
+Class 3 IoU: 0.35170
+Class 4 IoU: 0.30784
+Class 5 IoU: 0.27440
+Class 6 IoU: 0.41162
+Class 7 IoU: 0.71991
+Class 8 IoU: 0.12773
+Class 9 IoU: 0.73560
+Class 10 IoU: 0.00000
+[Epoch 32] [iter:32] Validation:
+mIoU:44.16874 Best mIOU:44.98750 on epoch 29
+Class 0 IoU: 0.76582
+Class 1 IoU: 0.72178
+Class 2 IoU: 0.44906
+Class 3 IoU: 0.35650
+Class 4 IoU: 0.31479
+Class 5 IoU: 0.25371
+Class 6 IoU: 0.44206
+Class 7 IoU: 0.72863
+Class 8 IoU: 0.12960
+Class 9 IoU: 0.69661
+Class 10 IoU: 0.00000
+[Epoch 33] [iter:32] Validation:
+mIoU:43.36651 Best mIOU:44.98750 on epoch 29
+Class 0 IoU: 0.77764
+Class 1 IoU: 0.70791
+Class 2 IoU: 0.46036
+Class 3 IoU: 0.34770
+Class 4 IoU: 0.28190
+Class 5 IoU: 0.20691
+Class 6 IoU: 0.41643
+Class 7 IoU: 0.72687
+Class 8 IoU: 0.13019
+Class 9 IoU: 0.71440
+Class 10 IoU: 0.00000
+[Epoch 34] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:45.76681 Best mIOU:45.76681 on epoch 34
+Class 0 IoU: 0.79119
+Class 1 IoU: 0.73497
+Class 2 IoU: 0.40857
+Class 3 IoU: 0.37146
+Class 4 IoU: 0.34325
+Class 5 IoU: 0.30848
+Class 6 IoU: 0.45012
+Class 7 IoU: 0.73440
+Class 8 IoU: 0.15809
+Class 9 IoU: 0.73381
+Class 10 IoU: 0.00000
+[Epoch 35] [iter:32] Validation:
+mIoU:44.69166 Best mIOU:45.76681 on epoch 34
+Class 0 IoU: 0.79442
+Class 1 IoU: 0.72825
+Class 2 IoU: 0.45945
+Class 3 IoU: 0.30752
+Class 4 IoU: 0.29507
+Class 5 IoU: 0.29266
+Class 6 IoU: 0.41609
+Class 7 IoU: 0.73621
+Class 8 IoU: 0.13943
+Class 9 IoU: 0.74697
+Class 10 IoU: 0.00000
+[Epoch 36] [iter:32] Validation:
+mIoU:45.20914 Best mIOU:45.76681 on epoch 34
+Class 0 IoU: 0.78652
+Class 1 IoU: 0.72197
+Class 2 IoU: 0.45047
+Class 3 IoU: 0.36616
+Class 4 IoU: 0.32290
+Class 5 IoU: 0.27699
+Class 6 IoU: 0.41837
+Class 7 IoU: 0.73974
+Class 8 IoU: 0.14814
+Class 9 IoU: 0.74174
+Class 10 IoU: 0.00000
+[Epoch 37] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:45.86136 Best mIOU:45.86136 on epoch 37
+Class 0 IoU: 0.79759
+Class 1 IoU: 0.73182
+Class 2 IoU: 0.45133
+Class 3 IoU: 0.37610
+Class 4 IoU: 0.33295
+Class 5 IoU: 0.30150
+Class 6 IoU: 0.44377
+Class 7 IoU: 0.73576
+Class 8 IoU: 0.11918
+Class 9 IoU: 0.75476
+Class 10 IoU: 0.00000
+[Epoch 38] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:46.49781 Best mIOU:46.49781 on epoch 38
+Class 0 IoU: 0.80427
+Class 1 IoU: 0.74079
+Class 2 IoU: 0.44215
+Class 3 IoU: 0.38970
+Class 4 IoU: 0.35486
+Class 5 IoU: 0.30865
+Class 6 IoU: 0.43290
+Class 7 IoU: 0.73419
+Class 8 IoU: 0.14694
+Class 9 IoU: 0.76032
+Class 10 IoU: 0.00000
+[Epoch 39] [iter:32] Validation:
+mIoU:45.81668 Best mIOU:46.49781 on epoch 38
+Class 0 IoU: 0.79652
+Class 1 IoU: 0.74203
+Class 2 IoU: 0.46984
+Class 3 IoU: 0.32885
+Class 4 IoU: 0.34825
+Class 5 IoU: 0.30140
+Class 6 IoU: 0.43647
+Class 7 IoU: 0.73402
+Class 8 IoU: 0.12289
+Class 9 IoU: 0.75955
+Class 10 IoU: 0.00000
+[Epoch 40] [iter:32] Validation:
+mIoU:46.44496 Best mIOU:46.49781 on epoch 38
+Class 0 IoU: 0.80379
+Class 1 IoU: 0.72888
+Class 2 IoU: 0.46935
+Class 3 IoU: 0.32538
+Class 4 IoU: 0.38460
+Class 5 IoU: 0.30626
+Class 6 IoU: 0.44944
+Class 7 IoU: 0.73099
+Class 8 IoU: 0.15693
+Class 9 IoU: 0.75332
+Class 10 IoU: 0.00000
+[Epoch 41] [iter:32] Validation:
+mIoU:46.49422 Best mIOU:46.49781 on epoch 38
+Class 0 IoU: 0.80255
+Class 1 IoU: 0.73151
+Class 2 IoU: 0.48020
+Class 3 IoU: 0.35949
+Class 4 IoU: 0.31503
+Class 5 IoU: 0.31969
+Class 6 IoU: 0.45138
+Class 7 IoU: 0.73846
+Class 8 IoU: 0.15418
+Class 9 IoU: 0.76187
+Class 10 IoU: 0.00000
+[Epoch 42] [iter:32] Validation:
+mIoU:45.57233 Best mIOU:46.49781 on epoch 38
+Class 0 IoU: 0.79058
+Class 1 IoU: 0.72761
+Class 2 IoU: 0.45944
+Class 3 IoU: 0.36113
+Class 4 IoU: 0.35503
+Class 5 IoU: 0.29044
+Class 6 IoU: 0.41686
+Class 7 IoU: 0.74041
+Class 8 IoU: 0.13448
+Class 9 IoU: 0.73697
+Class 10 IoU: 0.00000
+[Epoch 43] [iter:32] Validation:
+mIoU:45.72225 Best mIOU:46.49781 on epoch 38
+Class 0 IoU: 0.79374
+Class 1 IoU: 0.74201
+Class 2 IoU: 0.49847
+Class 3 IoU: 0.31751
+Class 4 IoU: 0.33644
+Class 5 IoU: 0.25723
+Class 6 IoU: 0.45820
+Class 7 IoU: 0.73430
+Class 8 IoU: 0.14320
+Class 9 IoU: 0.74835
+Class 10 IoU: 0.00000
+[Epoch 44] [iter:32] Validation:
+mIoU:46.42052 Best mIOU:46.49781 on epoch 38
+Class 0 IoU: 0.79040
+Class 1 IoU: 0.72861
+Class 2 IoU: 0.47751
+Class 3 IoU: 0.37765
+Class 4 IoU: 0.37483
+Class 5 IoU: 0.28761
+Class 6 IoU: 0.45106
+Class 7 IoU: 0.73797
+Class 8 IoU: 0.14433
+Class 9 IoU: 0.73629
+Class 10 IoU: 0.00000
+[Epoch 45] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:46.88312 Best mIOU:46.88312 on epoch 45
+Class 0 IoU: 0.79135
+Class 1 IoU: 0.72857
+Class 2 IoU: 0.46282
+Class 3 IoU: 0.38279
+Class 4 IoU: 0.38222
+Class 5 IoU: 0.30184
+Class 6 IoU: 0.46274
+Class 7 IoU: 0.73192
+Class 8 IoU: 0.15289
+Class 9 IoU: 0.76002
+Class 10 IoU: 0.00000
+[Epoch 46] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:47.26475 Best mIOU:47.26475 on epoch 46
+Class 0 IoU: 0.80973
+Class 1 IoU: 0.74879
+Class 2 IoU: 0.45593
+Class 3 IoU: 0.42105
+Class 4 IoU: 0.37594
+Class 5 IoU: 0.29195
+Class 6 IoU: 0.43627
+Class 7 IoU: 0.73691
+Class 8 IoU: 0.15651
+Class 9 IoU: 0.76603
+Class 10 IoU: 0.00000
+[Epoch 47] [iter:32] Validation:
+mIoU:47.03578 Best mIOU:47.26475 on epoch 46
+Class 0 IoU: 0.81211
+Class 1 IoU: 0.73020
+Class 2 IoU: 0.48261
+Class 3 IoU: 0.32750
+Class 4 IoU: 0.40106
+Class 5 IoU: 0.27573
+Class 6 IoU: 0.43989
+Class 7 IoU: 0.74607
+Class 8 IoU: 0.18253
+Class 9 IoU: 0.77623
+Class 10 IoU: 0.00000
+[Epoch 48] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:47.82536 Best mIOU:47.82536 on epoch 48
+Class 0 IoU: 0.81062
+Class 1 IoU: 0.74657
+Class 2 IoU: 0.45547
+Class 3 IoU: 0.38374
+Class 4 IoU: 0.38044
+Class 5 IoU: 0.31816
+Class 6 IoU: 0.47141
+Class 7 IoU: 0.74030
+Class 8 IoU: 0.18805
+Class 9 IoU: 0.76603
+Class 10 IoU: 0.00000
+[Epoch 49] [iter:32] Validation:
+mIoU:46.74206 Best mIOU:47.82536 on epoch 48
+Class 0 IoU: 0.79438
+Class 1 IoU: 0.73467
+Class 2 IoU: 0.50041
+Class 3 IoU: 0.40239
+Class 4 IoU: 0.38702
+Class 5 IoU: 0.26506
+Class 6 IoU: 0.41919
+Class 7 IoU: 0.73299
+Class 8 IoU: 0.16717
+Class 9 IoU: 0.73833
+Class 10 IoU: 0.00000
+[Epoch 50] [iter:32] Validation:
+mIoU:47.27889 Best mIOU:47.82536 on epoch 48
+Class 0 IoU: 0.79445
+Class 1 IoU: 0.74068
+Class 2 IoU: 0.48925
+Class 3 IoU: 0.39897
+Class 4 IoU: 0.41151
+Class 5 IoU: 0.28459
+Class 6 IoU: 0.43076
+Class 7 IoU: 0.73967
+Class 8 IoU: 0.17513
+Class 9 IoU: 0.73567
+Class 10 IoU: 0.00000
+[Epoch 51] [iter:32] Validation:
+mIoU:47.53614 Best mIOU:47.82536 on epoch 48
+Class 0 IoU: 0.81022
+Class 1 IoU: 0.71860
+Class 2 IoU: 0.51509
+Class 3 IoU: 0.40645
+Class 4 IoU: 0.40670
+Class 5 IoU: 0.30116
+Class 6 IoU: 0.41141
+Class 7 IoU: 0.73031
+Class 8 IoU: 0.16926
+Class 9 IoU: 0.75975
+Class 10 IoU: 0.00000
+[Epoch 52] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:47.99253 Best mIOU:47.99253 on epoch 52
+Class 0 IoU: 0.80162
+Class 1 IoU: 0.75056
+Class 2 IoU: 0.51789
+Class 3 IoU: 0.39716
+Class 4 IoU: 0.40136
+Class 5 IoU: 0.31499
+Class 6 IoU: 0.43964
+Class 7 IoU: 0.73769
+Class 8 IoU: 0.16248
+Class 9 IoU: 0.75580
+Class 10 IoU: 0.00000
+[Epoch 53] [iter:32] Validation:
+New best mIoU found. Model weights saved.
+mIoU:48.07220 Best mIOU:48.07220 on epoch 53
+Class 0 IoU: 0.80875
+Class 1 IoU: 0.77033
+Class 2 IoU: 0.49681
+Class 3 IoU: 0.31534
+Class 4 IoU: 0.38903
+Class 5 IoU: 0.33517
+Class 6 IoU: 0.45666
+Class 7 IoU: 0.73600
+Class 8 IoU: 0.20666
+Class 9 IoU: 0.77319
+Class 10 IoU: 0.00000
+[Epoch 54] [iter:32] Validation:
+mIoU:47.93407 Best mIOU:48.07220 on epoch 53
+Class 0 IoU: 0.80923
+Class 1 IoU: 0.74295
+Class 2 IoU: 0.51560
+Class 3 IoU: 0.36720
+Class 4 IoU: 0.41312
+Class 5 IoU: 0.31910
+Class 6 IoU: 0.45383
+Class 7 IoU: 0.73760
+Class 8 IoU: 0.15446
+Class 9 IoU: 0.75966
+Class 10 IoU: 0.00000
+WARNING:torch.distributed.elastic.agent.server.api:Received 15 death signal, shutting down workers
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 3010721 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 3010722 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 3010723 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 3010724 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 3010725 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 3010726 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 3010727 closing signal SIGTERM
+Traceback (most recent call last):
+  File "/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/site-packages/torch/distributed/launch.py", line 193, in <module>
+    main()
+  File "/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/site-packages/torch/distributed/launch.py", line 189, in main
+    launch(args)
+  File "/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/site-packages/torch/distributed/launch.py", line 174, in launch
+    run(args)
+  File "/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/site-packages/torch/distributed/run.py", line 710, in run
+    elastic_launch(
+  File "/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 131, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 252, in launch_agent
+    result = agent.run()
+  File "/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/site-packages/torch/distributed/elastic/metrics/api.py", line 125, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 709, in run
+    result = self._invoke_run(role)
+  File "/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/site-packages/torch/distributed/elastic/agent/server/api.py", line 843, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/home/zel220/anaconda3/envs/dual_teacher_new/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 60, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 3010652 got signal: 15

@@ -1,0 +1,747 @@
+2025-05-16 00:49:47,301 - distributed_c10d.py - INFO: Added key: store_based_barrier_key:1 to store for rank: 1
+2025-05-16 00:49:47,311 - distributed_c10d.py - INFO: Rank 5: Completed store-based barrier for key:store_based_barrier_key:1 with 7 nodes.
+2025-05-16 00:51:30,633 - train-rescue.py - INFO: [Epoch 0] [iter:32] Validation:
+2025-05-16 00:51:39,662 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 00:51:39,663 - train-rescue.py - INFO: mIoU:3.37432 Best mIOU:3.37432 on epoch 0
+2025-05-16 00:51:39,663 - train-rescue.py - INFO: Class 0 IoU: 0.02579
+2025-05-16 00:51:39,663 - train-rescue.py - INFO: Class 1 IoU: 0.11782
+2025-05-16 00:51:39,663 - train-rescue.py - INFO: Class 2 IoU: 0.00499
+2025-05-16 00:51:39,663 - train-rescue.py - INFO: Class 3 IoU: 0.01171
+2025-05-16 00:51:39,663 - train-rescue.py - INFO: Class 4 IoU: 0.01605
+2025-05-16 00:51:39,663 - train-rescue.py - INFO: Class 5 IoU: 0.00032
+2025-05-16 00:51:39,663 - train-rescue.py - INFO: Class 6 IoU: 0.00060
+2025-05-16 00:51:39,663 - train-rescue.py - INFO: Class 7 IoU: 0.01852
+2025-05-16 00:51:39,663 - train-rescue.py - INFO: Class 8 IoU: 0.01216
+2025-05-16 00:51:39,663 - train-rescue.py - INFO: Class 9 IoU: 0.16266
+2025-05-16 00:51:39,663 - train-rescue.py - INFO: Class 10 IoU: 0.00056
+2025-05-16 00:53:13,358 - train-rescue.py - INFO: [Epoch 1] [iter:32] Validation:
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: mIoU:11.27814 Best mIOU:11.27814 on epoch 1
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: Class 0 IoU: 0.47446
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: Class 1 IoU: 0.24148
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: Class 2 IoU: 0.01545
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: Class 3 IoU: 0.00315
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: Class 4 IoU: 0.01039
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: Class 5 IoU: 0.00007
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: Class 6 IoU: 0.00006
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: Class 7 IoU: 0.03244
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: Class 8 IoU: 0.00921
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: Class 9 IoU: 0.45338
+2025-05-16 00:53:22,203 - train-rescue.py - INFO: Class 10 IoU: 0.00051
+2025-05-16 00:54:56,068 - train-rescue.py - INFO: [Epoch 2] [iter:32] Validation:
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: mIoU:14.73194 Best mIOU:14.73194 on epoch 2
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: Class 0 IoU: 0.60027
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: Class 1 IoU: 0.31282
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: Class 2 IoU: 0.03020
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: Class 3 IoU: 0.00011
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: Class 4 IoU: 0.00080
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: Class 5 IoU: 0.00001
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: Class 6 IoU: 0.00000
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: Class 7 IoU: 0.04471
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: Class 8 IoU: 0.00052
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: Class 9 IoU: 0.63108
+2025-05-16 00:55:05,931 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 00:56:38,525 - train-rescue.py - INFO: [Epoch 3] [iter:32] Validation:
+2025-05-16 00:56:48,396 - train-rescue.py - INFO: mIoU:12.81463 Best mIOU:14.73194 on epoch 2
+2025-05-16 00:56:48,396 - train-rescue.py - INFO: Class 0 IoU: 0.59872
+2025-05-16 00:56:48,396 - train-rescue.py - INFO: Class 1 IoU: 0.10934
+2025-05-16 00:56:48,396 - train-rescue.py - INFO: Class 2 IoU: 0.01287
+2025-05-16 00:56:48,396 - train-rescue.py - INFO: Class 3 IoU: 0.00000
+2025-05-16 00:56:48,396 - train-rescue.py - INFO: Class 4 IoU: 0.00000
+2025-05-16 00:56:48,396 - train-rescue.py - INFO: Class 5 IoU: 0.00000
+2025-05-16 00:56:48,396 - train-rescue.py - INFO: Class 6 IoU: 0.00000
+2025-05-16 00:56:48,396 - train-rescue.py - INFO: Class 7 IoU: 0.02423
+2025-05-16 00:56:48,397 - train-rescue.py - INFO: Class 8 IoU: 0.00000
+2025-05-16 00:56:48,397 - train-rescue.py - INFO: Class 9 IoU: 0.66445
+2025-05-16 00:56:48,397 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 00:58:21,138 - train-rescue.py - INFO: [Epoch 4] [iter:32] Validation:
+2025-05-16 00:58:29,893 - train-rescue.py - INFO: mIoU:13.58133 Best mIOU:14.73194 on epoch 2
+2025-05-16 00:58:29,894 - train-rescue.py - INFO: Class 0 IoU: 0.60697
+2025-05-16 00:58:29,894 - train-rescue.py - INFO: Class 1 IoU: 0.15937
+2025-05-16 00:58:29,894 - train-rescue.py - INFO: Class 2 IoU: 0.01910
+2025-05-16 00:58:29,894 - train-rescue.py - INFO: Class 3 IoU: 0.00000
+2025-05-16 00:58:29,894 - train-rescue.py - INFO: Class 4 IoU: 0.00000
+2025-05-16 00:58:29,894 - train-rescue.py - INFO: Class 5 IoU: 0.00000
+2025-05-16 00:58:29,894 - train-rescue.py - INFO: Class 6 IoU: 0.00000
+2025-05-16 00:58:29,894 - train-rescue.py - INFO: Class 7 IoU: 0.04271
+2025-05-16 00:58:29,894 - train-rescue.py - INFO: Class 8 IoU: 0.00000
+2025-05-16 00:58:29,894 - train-rescue.py - INFO: Class 9 IoU: 0.66580
+2025-05-16 00:58:29,894 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:00:03,573 - train-rescue.py - INFO: [Epoch 5] [iter:32] Validation:
+2025-05-16 01:00:12,477 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:00:12,477 - train-rescue.py - INFO: mIoU:23.68728 Best mIOU:23.68728 on epoch 5
+2025-05-16 01:00:12,478 - train-rescue.py - INFO: Class 0 IoU: 0.68323
+2025-05-16 01:00:12,478 - train-rescue.py - INFO: Class 1 IoU: 0.47911
+2025-05-16 01:00:12,478 - train-rescue.py - INFO: Class 2 IoU: 0.25298
+2025-05-16 01:00:12,478 - train-rescue.py - INFO: Class 3 IoU: 0.03772
+2025-05-16 01:00:12,478 - train-rescue.py - INFO: Class 4 IoU: 0.00003
+2025-05-16 01:00:12,478 - train-rescue.py - INFO: Class 5 IoU: 0.00000
+2025-05-16 01:00:12,478 - train-rescue.py - INFO: Class 6 IoU: 0.00000
+2025-05-16 01:00:12,478 - train-rescue.py - INFO: Class 7 IoU: 0.45455
+2025-05-16 01:00:12,478 - train-rescue.py - INFO: Class 8 IoU: 0.00000
+2025-05-16 01:00:12,478 - train-rescue.py - INFO: Class 9 IoU: 0.69798
+2025-05-16 01:00:12,478 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:01:46,126 - train-rescue.py - INFO: [Epoch 6] [iter:32] Validation:
+2025-05-16 01:01:54,604 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:01:54,605 - train-rescue.py - INFO: mIoU:23.78432 Best mIOU:23.78432 on epoch 6
+2025-05-16 01:01:54,605 - train-rescue.py - INFO: Class 0 IoU: 0.68201
+2025-05-16 01:01:54,605 - train-rescue.py - INFO: Class 1 IoU: 0.49169
+2025-05-16 01:01:54,605 - train-rescue.py - INFO: Class 2 IoU: 0.29900
+2025-05-16 01:01:54,605 - train-rescue.py - INFO: Class 3 IoU: 0.03108
+2025-05-16 01:01:54,605 - train-rescue.py - INFO: Class 4 IoU: 0.00000
+2025-05-16 01:01:54,605 - train-rescue.py - INFO: Class 5 IoU: 0.00000
+2025-05-16 01:01:54,605 - train-rescue.py - INFO: Class 6 IoU: 0.00000
+2025-05-16 01:01:54,605 - train-rescue.py - INFO: Class 7 IoU: 0.41482
+2025-05-16 01:01:54,605 - train-rescue.py - INFO: Class 8 IoU: 0.00000
+2025-05-16 01:01:54,605 - train-rescue.py - INFO: Class 9 IoU: 0.69768
+2025-05-16 01:01:54,605 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:03:28,643 - train-rescue.py - INFO: [Epoch 7] [iter:32] Validation:
+2025-05-16 01:03:37,231 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:03:37,232 - train-rescue.py - INFO: mIoU:27.00410 Best mIOU:27.00410 on epoch 7
+2025-05-16 01:03:37,232 - train-rescue.py - INFO: Class 0 IoU: 0.70489
+2025-05-16 01:03:37,232 - train-rescue.py - INFO: Class 1 IoU: 0.56492
+2025-05-16 01:03:37,232 - train-rescue.py - INFO: Class 2 IoU: 0.32137
+2025-05-16 01:03:37,232 - train-rescue.py - INFO: Class 3 IoU: 0.16768
+2025-05-16 01:03:37,232 - train-rescue.py - INFO: Class 4 IoU: 0.00158
+2025-05-16 01:03:37,232 - train-rescue.py - INFO: Class 5 IoU: 0.00000
+2025-05-16 01:03:37,232 - train-rescue.py - INFO: Class 6 IoU: 0.00000
+2025-05-16 01:03:37,232 - train-rescue.py - INFO: Class 7 IoU: 0.50323
+2025-05-16 01:03:37,232 - train-rescue.py - INFO: Class 8 IoU: 0.00000
+2025-05-16 01:03:37,232 - train-rescue.py - INFO: Class 9 IoU: 0.70677
+2025-05-16 01:03:37,232 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:05:11,386 - train-rescue.py - INFO: [Epoch 8] [iter:32] Validation:
+2025-05-16 01:05:21,359 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:05:21,359 - train-rescue.py - INFO: mIoU:27.59912 Best mIOU:27.59912 on epoch 8
+2025-05-16 01:05:21,359 - train-rescue.py - INFO: Class 0 IoU: 0.71303
+2025-05-16 01:05:21,359 - train-rescue.py - INFO: Class 1 IoU: 0.55828
+2025-05-16 01:05:21,359 - train-rescue.py - INFO: Class 2 IoU: 0.32238
+2025-05-16 01:05:21,359 - train-rescue.py - INFO: Class 3 IoU: 0.17215
+2025-05-16 01:05:21,359 - train-rescue.py - INFO: Class 4 IoU: 0.00363
+2025-05-16 01:05:21,359 - train-rescue.py - INFO: Class 5 IoU: 0.00000
+2025-05-16 01:05:21,359 - train-rescue.py - INFO: Class 6 IoU: 0.00000
+2025-05-16 01:05:21,360 - train-rescue.py - INFO: Class 7 IoU: 0.55548
+2025-05-16 01:05:21,360 - train-rescue.py - INFO: Class 8 IoU: 0.00000
+2025-05-16 01:05:21,360 - train-rescue.py - INFO: Class 9 IoU: 0.71095
+2025-05-16 01:05:21,360 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:06:54,003 - train-rescue.py - INFO: [Epoch 9] [iter:32] Validation:
+2025-05-16 01:07:02,899 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:07:02,899 - train-rescue.py - INFO: mIoU:30.09178 Best mIOU:30.09178 on epoch 9
+2025-05-16 01:07:02,899 - train-rescue.py - INFO: Class 0 IoU: 0.73021
+2025-05-16 01:07:02,899 - train-rescue.py - INFO: Class 1 IoU: 0.60842
+2025-05-16 01:07:02,899 - train-rescue.py - INFO: Class 2 IoU: 0.34551
+2025-05-16 01:07:02,899 - train-rescue.py - INFO: Class 3 IoU: 0.27201
+2025-05-16 01:07:02,899 - train-rescue.py - INFO: Class 4 IoU: 0.01899
+2025-05-16 01:07:02,899 - train-rescue.py - INFO: Class 5 IoU: 0.00003
+2025-05-16 01:07:02,899 - train-rescue.py - INFO: Class 6 IoU: 0.00000
+2025-05-16 01:07:02,899 - train-rescue.py - INFO: Class 7 IoU: 0.62322
+2025-05-16 01:07:02,900 - train-rescue.py - INFO: Class 8 IoU: 0.00000
+2025-05-16 01:07:02,900 - train-rescue.py - INFO: Class 9 IoU: 0.71170
+2025-05-16 01:07:02,900 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:08:36,308 - train-rescue.py - INFO: [Epoch 10] [iter:32] Validation:
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: mIoU:30.29335 Best mIOU:30.29335 on epoch 10
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: Class 0 IoU: 0.73572
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: Class 1 IoU: 0.59960
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: Class 2 IoU: 0.32760
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: Class 3 IoU: 0.30772
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: Class 4 IoU: 0.01019
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: Class 5 IoU: 0.00100
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: Class 6 IoU: 0.00036
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: Class 7 IoU: 0.63153
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: Class 8 IoU: 0.00007
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: Class 9 IoU: 0.71849
+2025-05-16 01:08:45,093 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:10:18,827 - train-rescue.py - INFO: [Epoch 11] [iter:32] Validation:
+2025-05-16 01:10:27,599 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:10:27,599 - train-rescue.py - INFO: mIoU:31.15788 Best mIOU:31.15788 on epoch 11
+2025-05-16 01:10:27,600 - train-rescue.py - INFO: Class 0 IoU: 0.73165
+2025-05-16 01:10:27,600 - train-rescue.py - INFO: Class 1 IoU: 0.62641
+2025-05-16 01:10:27,600 - train-rescue.py - INFO: Class 2 IoU: 0.37011
+2025-05-16 01:10:27,600 - train-rescue.py - INFO: Class 3 IoU: 0.29509
+2025-05-16 01:10:27,600 - train-rescue.py - INFO: Class 4 IoU: 0.04806
+2025-05-16 01:10:27,600 - train-rescue.py - INFO: Class 5 IoU: 0.00119
+2025-05-16 01:10:27,600 - train-rescue.py - INFO: Class 6 IoU: 0.00416
+2025-05-16 01:10:27,600 - train-rescue.py - INFO: Class 7 IoU: 0.64837
+2025-05-16 01:10:27,600 - train-rescue.py - INFO: Class 8 IoU: 0.00120
+2025-05-16 01:10:27,600 - train-rescue.py - INFO: Class 9 IoU: 0.70111
+2025-05-16 01:10:27,600 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:12:01,586 - train-rescue.py - INFO: [Epoch 12] [iter:32] Validation:
+2025-05-16 01:12:10,061 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:12:10,061 - train-rescue.py - INFO: mIoU:32.34606 Best mIOU:32.34606 on epoch 12
+2025-05-16 01:12:10,061 - train-rescue.py - INFO: Class 0 IoU: 0.74908
+2025-05-16 01:12:10,061 - train-rescue.py - INFO: Class 1 IoU: 0.65145
+2025-05-16 01:12:10,061 - train-rescue.py - INFO: Class 2 IoU: 0.35644
+2025-05-16 01:12:10,061 - train-rescue.py - INFO: Class 3 IoU: 0.34455
+2025-05-16 01:12:10,061 - train-rescue.py - INFO: Class 4 IoU: 0.05641
+2025-05-16 01:12:10,061 - train-rescue.py - INFO: Class 5 IoU: 0.01204
+2025-05-16 01:12:10,061 - train-rescue.py - INFO: Class 6 IoU: 0.00953
+2025-05-16 01:12:10,062 - train-rescue.py - INFO: Class 7 IoU: 0.65446
+2025-05-16 01:12:10,062 - train-rescue.py - INFO: Class 8 IoU: 0.00829
+2025-05-16 01:12:10,062 - train-rescue.py - INFO: Class 9 IoU: 0.71583
+2025-05-16 01:12:10,062 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:13:44,247 - train-rescue.py - INFO: [Epoch 13] [iter:32] Validation:
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: mIoU:32.89401 Best mIOU:32.89401 on epoch 13
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: Class 0 IoU: 0.74845
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: Class 1 IoU: 0.64392
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: Class 2 IoU: 0.36970
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: Class 3 IoU: 0.32933
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: Class 4 IoU: 0.09075
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: Class 5 IoU: 0.01449
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: Class 6 IoU: 0.02726
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: Class 7 IoU: 0.66591
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: Class 8 IoU: 0.01786
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: Class 9 IoU: 0.71067
+2025-05-16 01:13:54,162 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:15:30,499 - train-rescue.py - INFO: [Epoch 14] [iter:32] Validation:
+2025-05-16 01:15:39,321 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:15:39,321 - train-rescue.py - INFO: mIoU:33.74958 Best mIOU:33.74958 on epoch 14
+2025-05-16 01:15:39,321 - train-rescue.py - INFO: Class 0 IoU: 0.75107
+2025-05-16 01:15:39,321 - train-rescue.py - INFO: Class 1 IoU: 0.65631
+2025-05-16 01:15:39,321 - train-rescue.py - INFO: Class 2 IoU: 0.36720
+2025-05-16 01:15:39,322 - train-rescue.py - INFO: Class 3 IoU: 0.32139
+2025-05-16 01:15:39,322 - train-rescue.py - INFO: Class 4 IoU: 0.12413
+2025-05-16 01:15:39,322 - train-rescue.py - INFO: Class 5 IoU: 0.03896
+2025-05-16 01:15:39,322 - train-rescue.py - INFO: Class 6 IoU: 0.04256
+2025-05-16 01:15:39,322 - train-rescue.py - INFO: Class 7 IoU: 0.67282
+2025-05-16 01:15:39,322 - train-rescue.py - INFO: Class 8 IoU: 0.02891
+2025-05-16 01:15:39,322 - train-rescue.py - INFO: Class 9 IoU: 0.70911
+2025-05-16 01:15:39,322 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:17:13,228 - train-rescue.py - INFO: [Epoch 15] [iter:32] Validation:
+2025-05-16 01:17:23,210 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:17:23,210 - train-rescue.py - INFO: mIoU:36.06645 Best mIOU:36.06645 on epoch 15
+2025-05-16 01:17:23,210 - train-rescue.py - INFO: Class 0 IoU: 0.74821
+2025-05-16 01:17:23,210 - train-rescue.py - INFO: Class 1 IoU: 0.66406
+2025-05-16 01:17:23,210 - train-rescue.py - INFO: Class 2 IoU: 0.38897
+2025-05-16 01:17:23,210 - train-rescue.py - INFO: Class 3 IoU: 0.31831
+2025-05-16 01:17:23,210 - train-rescue.py - INFO: Class 4 IoU: 0.18721
+2025-05-16 01:17:23,210 - train-rescue.py - INFO: Class 5 IoU: 0.09209
+2025-05-16 01:17:23,210 - train-rescue.py - INFO: Class 6 IoU: 0.13156
+2025-05-16 01:17:23,210 - train-rescue.py - INFO: Class 7 IoU: 0.67110
+2025-05-16 01:17:23,210 - train-rescue.py - INFO: Class 8 IoU: 0.06858
+2025-05-16 01:17:23,211 - train-rescue.py - INFO: Class 9 IoU: 0.69722
+2025-05-16 01:17:23,211 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:18:55,860 - train-rescue.py - INFO: [Epoch 16] [iter:32] Validation:
+2025-05-16 01:19:05,681 - train-rescue.py - INFO: mIoU:34.84057 Best mIOU:36.06645 on epoch 15
+2025-05-16 01:19:05,682 - train-rescue.py - INFO: Class 0 IoU: 0.74801
+2025-05-16 01:19:05,682 - train-rescue.py - INFO: Class 1 IoU: 0.64712
+2025-05-16 01:19:05,682 - train-rescue.py - INFO: Class 2 IoU: 0.37497
+2025-05-16 01:19:05,682 - train-rescue.py - INFO: Class 3 IoU: 0.33511
+2025-05-16 01:19:05,682 - train-rescue.py - INFO: Class 4 IoU: 0.12598
+2025-05-16 01:19:05,682 - train-rescue.py - INFO: Class 5 IoU: 0.06398
+2025-05-16 01:19:05,682 - train-rescue.py - INFO: Class 6 IoU: 0.11726
+2025-05-16 01:19:05,682 - train-rescue.py - INFO: Class 7 IoU: 0.68453
+2025-05-16 01:19:05,682 - train-rescue.py - INFO: Class 8 IoU: 0.04396
+2025-05-16 01:19:05,682 - train-rescue.py - INFO: Class 9 IoU: 0.69153
+2025-05-16 01:19:05,682 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:20:38,543 - train-rescue.py - INFO: [Epoch 17] [iter:32] Validation:
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: mIoU:38.08182 Best mIOU:38.08182 on epoch 17
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: Class 0 IoU: 0.75716
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: Class 1 IoU: 0.67974
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: Class 2 IoU: 0.37511
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: Class 3 IoU: 0.34491
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: Class 4 IoU: 0.18905
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: Class 5 IoU: 0.11596
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: Class 6 IoU: 0.24687
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: Class 7 IoU: 0.69462
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: Class 8 IoU: 0.08904
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: Class 9 IoU: 0.69653
+2025-05-16 01:20:47,659 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:22:21,237 - train-rescue.py - INFO: [Epoch 18] [iter:32] Validation:
+2025-05-16 01:22:30,773 - train-rescue.py - INFO: mIoU:38.05293 Best mIOU:38.08182 on epoch 17
+2025-05-16 01:22:30,773 - train-rescue.py - INFO: Class 0 IoU: 0.75368
+2025-05-16 01:22:30,773 - train-rescue.py - INFO: Class 1 IoU: 0.66167
+2025-05-16 01:22:30,773 - train-rescue.py - INFO: Class 2 IoU: 0.40408
+2025-05-16 01:22:30,773 - train-rescue.py - INFO: Class 3 IoU: 0.32556
+2025-05-16 01:22:30,773 - train-rescue.py - INFO: Class 4 IoU: 0.19308
+2025-05-16 01:22:30,773 - train-rescue.py - INFO: Class 5 IoU: 0.13140
+2025-05-16 01:22:30,773 - train-rescue.py - INFO: Class 6 IoU: 0.23417
+2025-05-16 01:22:30,774 - train-rescue.py - INFO: Class 7 IoU: 0.69311
+2025-05-16 01:22:30,774 - train-rescue.py - INFO: Class 8 IoU: 0.08754
+2025-05-16 01:22:30,774 - train-rescue.py - INFO: Class 9 IoU: 0.70154
+2025-05-16 01:22:30,774 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:24:03,794 - train-rescue.py - INFO: [Epoch 19] [iter:32] Validation:
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: mIoU:39.75973 Best mIOU:39.75973 on epoch 19
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: Class 0 IoU: 0.76632
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: Class 1 IoU: 0.67209
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: Class 2 IoU: 0.38237
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: Class 3 IoU: 0.35827
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: Class 4 IoU: 0.18010
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: Class 5 IoU: 0.18383
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: Class 6 IoU: 0.32347
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: Class 7 IoU: 0.69932
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: Class 8 IoU: 0.09271
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: Class 9 IoU: 0.71508
+2025-05-16 01:24:12,823 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:25:46,455 - train-rescue.py - INFO: [Epoch 20] [iter:32] Validation:
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: mIoU:41.48944 Best mIOU:41.48944 on epoch 20
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: Class 0 IoU: 0.77239
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: Class 1 IoU: 0.68088
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: Class 2 IoU: 0.39718
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: Class 3 IoU: 0.35114
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: Class 4 IoU: 0.23556
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: Class 5 IoU: 0.23265
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: Class 6 IoU: 0.35194
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: Class 7 IoU: 0.70089
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: Class 8 IoU: 0.12498
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: Class 9 IoU: 0.71623
+2025-05-16 01:25:56,311 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:27:28,955 - train-rescue.py - INFO: [Epoch 21] [iter:32] Validation:
+2025-05-16 01:27:38,787 - train-rescue.py - INFO: mIoU:41.36805 Best mIOU:41.48944 on epoch 20
+2025-05-16 01:27:38,788 - train-rescue.py - INFO: Class 0 IoU: 0.78022
+2025-05-16 01:27:38,788 - train-rescue.py - INFO: Class 1 IoU: 0.68222
+2025-05-16 01:27:38,788 - train-rescue.py - INFO: Class 2 IoU: 0.40429
+2025-05-16 01:27:38,788 - train-rescue.py - INFO: Class 3 IoU: 0.36249
+2025-05-16 01:27:38,788 - train-rescue.py - INFO: Class 4 IoU: 0.18965
+2025-05-16 01:27:38,788 - train-rescue.py - INFO: Class 5 IoU: 0.18729
+2025-05-16 01:27:38,788 - train-rescue.py - INFO: Class 6 IoU: 0.38355
+2025-05-16 01:27:38,788 - train-rescue.py - INFO: Class 7 IoU: 0.71386
+2025-05-16 01:27:38,788 - train-rescue.py - INFO: Class 8 IoU: 0.11712
+2025-05-16 01:27:38,788 - train-rescue.py - INFO: Class 9 IoU: 0.72979
+2025-05-16 01:27:38,788 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:29:11,330 - train-rescue.py - INFO: [Epoch 22] [iter:32] Validation:
+2025-05-16 01:29:21,115 - train-rescue.py - INFO: mIoU:41.24751 Best mIOU:41.48944 on epoch 20
+2025-05-16 01:29:21,115 - train-rescue.py - INFO: Class 0 IoU: 0.77288
+2025-05-16 01:29:21,115 - train-rescue.py - INFO: Class 1 IoU: 0.69335
+2025-05-16 01:29:21,115 - train-rescue.py - INFO: Class 2 IoU: 0.41409
+2025-05-16 01:29:21,115 - train-rescue.py - INFO: Class 3 IoU: 0.35111
+2025-05-16 01:29:21,115 - train-rescue.py - INFO: Class 4 IoU: 0.22156
+2025-05-16 01:29:21,115 - train-rescue.py - INFO: Class 5 IoU: 0.15607
+2025-05-16 01:29:21,115 - train-rescue.py - INFO: Class 6 IoU: 0.36792
+2025-05-16 01:29:21,115 - train-rescue.py - INFO: Class 7 IoU: 0.71989
+2025-05-16 01:29:21,115 - train-rescue.py - INFO: Class 8 IoU: 0.12512
+2025-05-16 01:29:21,115 - train-rescue.py - INFO: Class 9 IoU: 0.71523
+2025-05-16 01:29:21,115 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:30:54,205 - train-rescue.py - INFO: [Epoch 23] [iter:32] Validation:
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: mIoU:42.74958 Best mIOU:42.74958 on epoch 23
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: Class 0 IoU: 0.77719
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: Class 1 IoU: 0.69496
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: Class 2 IoU: 0.42634
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: Class 3 IoU: 0.30948
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: Class 4 IoU: 0.26002
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: Class 5 IoU: 0.23654
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: Class 6 IoU: 0.41953
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: Class 7 IoU: 0.72277
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: Class 8 IoU: 0.14573
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: Class 9 IoU: 0.70988
+2025-05-16 01:31:03,084 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:32:36,717 - train-rescue.py - INFO: [Epoch 24] [iter:32] Validation:
+2025-05-16 01:32:45,637 - train-rescue.py - INFO: mIoU:42.36150 Best mIOU:42.74958 on epoch 23
+2025-05-16 01:32:45,637 - train-rescue.py - INFO: Class 0 IoU: 0.77858
+2025-05-16 01:32:45,637 - train-rescue.py - INFO: Class 1 IoU: 0.68240
+2025-05-16 01:32:45,637 - train-rescue.py - INFO: Class 2 IoU: 0.41617
+2025-05-16 01:32:45,637 - train-rescue.py - INFO: Class 3 IoU: 0.34176
+2025-05-16 01:32:45,637 - train-rescue.py - INFO: Class 4 IoU: 0.25193
+2025-05-16 01:32:45,637 - train-rescue.py - INFO: Class 5 IoU: 0.23711
+2025-05-16 01:32:45,637 - train-rescue.py - INFO: Class 6 IoU: 0.39944
+2025-05-16 01:32:45,637 - train-rescue.py - INFO: Class 7 IoU: 0.72039
+2025-05-16 01:32:45,637 - train-rescue.py - INFO: Class 8 IoU: 0.12458
+2025-05-16 01:32:45,638 - train-rescue.py - INFO: Class 9 IoU: 0.70741
+2025-05-16 01:32:45,638 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:34:19,417 - train-rescue.py - INFO: [Epoch 25] [iter:32] Validation:
+2025-05-16 01:34:28,239 - train-rescue.py - INFO: mIoU:41.84263 Best mIOU:42.74958 on epoch 23
+2025-05-16 01:34:28,239 - train-rescue.py - INFO: Class 0 IoU: 0.77839
+2025-05-16 01:34:28,239 - train-rescue.py - INFO: Class 1 IoU: 0.68499
+2025-05-16 01:34:28,239 - train-rescue.py - INFO: Class 2 IoU: 0.42723
+2025-05-16 01:34:28,239 - train-rescue.py - INFO: Class 3 IoU: 0.32528
+2025-05-16 01:34:28,239 - train-rescue.py - INFO: Class 4 IoU: 0.26157
+2025-05-16 01:34:28,239 - train-rescue.py - INFO: Class 5 IoU: 0.20680
+2025-05-16 01:34:28,239 - train-rescue.py - INFO: Class 6 IoU: 0.38816
+2025-05-16 01:34:28,239 - train-rescue.py - INFO: Class 7 IoU: 0.71435
+2025-05-16 01:34:28,239 - train-rescue.py - INFO: Class 8 IoU: 0.10707
+2025-05-16 01:34:28,239 - train-rescue.py - INFO: Class 9 IoU: 0.70885
+2025-05-16 01:34:28,239 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:36:02,313 - train-rescue.py - INFO: [Epoch 26] [iter:32] Validation:
+2025-05-16 01:36:11,332 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:36:11,332 - train-rescue.py - INFO: mIoU:43.09761 Best mIOU:43.09761 on epoch 26
+2025-05-16 01:36:11,332 - train-rescue.py - INFO: Class 0 IoU: 0.78585
+2025-05-16 01:36:11,333 - train-rescue.py - INFO: Class 1 IoU: 0.68296
+2025-05-16 01:36:11,333 - train-rescue.py - INFO: Class 2 IoU: 0.42352
+2025-05-16 01:36:11,333 - train-rescue.py - INFO: Class 3 IoU: 0.34921
+2025-05-16 01:36:11,333 - train-rescue.py - INFO: Class 4 IoU: 0.29122
+2025-05-16 01:36:11,333 - train-rescue.py - INFO: Class 5 IoU: 0.23232
+2025-05-16 01:36:11,333 - train-rescue.py - INFO: Class 6 IoU: 0.38608
+2025-05-16 01:36:11,333 - train-rescue.py - INFO: Class 7 IoU: 0.72210
+2025-05-16 01:36:11,333 - train-rescue.py - INFO: Class 8 IoU: 0.13457
+2025-05-16 01:36:11,333 - train-rescue.py - INFO: Class 9 IoU: 0.73290
+2025-05-16 01:36:11,333 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:37:44,773 - train-rescue.py - INFO: [Epoch 27] [iter:32] Validation:
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: mIoU:43.87789 Best mIOU:43.87789 on epoch 27
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: Class 0 IoU: 0.79082
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: Class 1 IoU: 0.70282
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: Class 2 IoU: 0.43952
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: Class 3 IoU: 0.33198
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: Class 4 IoU: 0.27224
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: Class 5 IoU: 0.25225
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: Class 6 IoU: 0.42904
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: Class 7 IoU: 0.72158
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: Class 8 IoU: 0.15073
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: Class 9 IoU: 0.73559
+2025-05-16 01:37:54,639 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:39:27,395 - train-rescue.py - INFO: [Epoch 28] [iter:32] Validation:
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: mIoU:44.59872 Best mIOU:44.59872 on epoch 28
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: Class 0 IoU: 0.79160
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: Class 1 IoU: 0.72059
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: Class 2 IoU: 0.39288
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: Class 3 IoU: 0.38863
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: Class 4 IoU: 0.28403
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: Class 5 IoU: 0.26191
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: Class 6 IoU: 0.43528
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: Class 7 IoU: 0.73625
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: Class 8 IoU: 0.15248
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: Class 9 IoU: 0.74222
+2025-05-16 01:39:37,280 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:41:09,886 - train-rescue.py - INFO: [Epoch 29] [iter:32] Validation:
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: mIoU:44.98750 Best mIOU:44.98750 on epoch 29
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: Class 0 IoU: 0.79162
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: Class 1 IoU: 0.72024
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: Class 2 IoU: 0.44471
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: Class 3 IoU: 0.36834
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: Class 4 IoU: 0.28741
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: Class 5 IoU: 0.26374
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: Class 6 IoU: 0.43818
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: Class 7 IoU: 0.72978
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: Class 8 IoU: 0.15635
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: Class 9 IoU: 0.74825
+2025-05-16 01:41:18,683 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:42:52,512 - train-rescue.py - INFO: [Epoch 30] [iter:32] Validation:
+2025-05-16 01:43:01,500 - train-rescue.py - INFO: mIoU:44.24802 Best mIOU:44.98750 on epoch 29
+2025-05-16 01:43:01,500 - train-rescue.py - INFO: Class 0 IoU: 0.78274
+2025-05-16 01:43:01,500 - train-rescue.py - INFO: Class 1 IoU: 0.72418
+2025-05-16 01:43:01,500 - train-rescue.py - INFO: Class 2 IoU: 0.46568
+2025-05-16 01:43:01,500 - train-rescue.py - INFO: Class 3 IoU: 0.34141
+2025-05-16 01:43:01,500 - train-rescue.py - INFO: Class 4 IoU: 0.29667
+2025-05-16 01:43:01,500 - train-rescue.py - INFO: Class 5 IoU: 0.24515
+2025-05-16 01:43:01,500 - train-rescue.py - INFO: Class 6 IoU: 0.40579
+2025-05-16 01:43:01,500 - train-rescue.py - INFO: Class 7 IoU: 0.72351
+2025-05-16 01:43:01,500 - train-rescue.py - INFO: Class 8 IoU: 0.15745
+2025-05-16 01:43:01,500 - train-rescue.py - INFO: Class 9 IoU: 0.72470
+2025-05-16 01:43:01,500 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:44:35,148 - train-rescue.py - INFO: [Epoch 31] [iter:32] Validation:
+2025-05-16 01:44:44,972 - train-rescue.py - INFO: mIoU:44.45409 Best mIOU:44.98750 on epoch 29
+2025-05-16 01:44:44,972 - train-rescue.py - INFO: Class 0 IoU: 0.79016
+2025-05-16 01:44:44,972 - train-rescue.py - INFO: Class 1 IoU: 0.71634
+2025-05-16 01:44:44,972 - train-rescue.py - INFO: Class 2 IoU: 0.45466
+2025-05-16 01:44:44,972 - train-rescue.py - INFO: Class 3 IoU: 0.35170
+2025-05-16 01:44:44,972 - train-rescue.py - INFO: Class 4 IoU: 0.30784
+2025-05-16 01:44:44,972 - train-rescue.py - INFO: Class 5 IoU: 0.27440
+2025-05-16 01:44:44,972 - train-rescue.py - INFO: Class 6 IoU: 0.41162
+2025-05-16 01:44:44,972 - train-rescue.py - INFO: Class 7 IoU: 0.71991
+2025-05-16 01:44:44,972 - train-rescue.py - INFO: Class 8 IoU: 0.12773
+2025-05-16 01:44:44,972 - train-rescue.py - INFO: Class 9 IoU: 0.73560
+2025-05-16 01:44:44,972 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:46:17,889 - train-rescue.py - INFO: [Epoch 32] [iter:32] Validation:
+2025-05-16 01:46:27,734 - train-rescue.py - INFO: mIoU:44.16874 Best mIOU:44.98750 on epoch 29
+2025-05-16 01:46:27,734 - train-rescue.py - INFO: Class 0 IoU: 0.76582
+2025-05-16 01:46:27,734 - train-rescue.py - INFO: Class 1 IoU: 0.72178
+2025-05-16 01:46:27,734 - train-rescue.py - INFO: Class 2 IoU: 0.44906
+2025-05-16 01:46:27,734 - train-rescue.py - INFO: Class 3 IoU: 0.35650
+2025-05-16 01:46:27,734 - train-rescue.py - INFO: Class 4 IoU: 0.31479
+2025-05-16 01:46:27,734 - train-rescue.py - INFO: Class 5 IoU: 0.25371
+2025-05-16 01:46:27,734 - train-rescue.py - INFO: Class 6 IoU: 0.44206
+2025-05-16 01:46:27,734 - train-rescue.py - INFO: Class 7 IoU: 0.72863
+2025-05-16 01:46:27,734 - train-rescue.py - INFO: Class 8 IoU: 0.12960
+2025-05-16 01:46:27,734 - train-rescue.py - INFO: Class 9 IoU: 0.69661
+2025-05-16 01:46:27,735 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:48:00,302 - train-rescue.py - INFO: [Epoch 33] [iter:32] Validation:
+2025-05-16 01:48:09,204 - train-rescue.py - INFO: mIoU:43.36651 Best mIOU:44.98750 on epoch 29
+2025-05-16 01:48:09,205 - train-rescue.py - INFO: Class 0 IoU: 0.77764
+2025-05-16 01:48:09,205 - train-rescue.py - INFO: Class 1 IoU: 0.70791
+2025-05-16 01:48:09,205 - train-rescue.py - INFO: Class 2 IoU: 0.46036
+2025-05-16 01:48:09,205 - train-rescue.py - INFO: Class 3 IoU: 0.34770
+2025-05-16 01:48:09,205 - train-rescue.py - INFO: Class 4 IoU: 0.28190
+2025-05-16 01:48:09,205 - train-rescue.py - INFO: Class 5 IoU: 0.20691
+2025-05-16 01:48:09,205 - train-rescue.py - INFO: Class 6 IoU: 0.41643
+2025-05-16 01:48:09,205 - train-rescue.py - INFO: Class 7 IoU: 0.72687
+2025-05-16 01:48:09,205 - train-rescue.py - INFO: Class 8 IoU: 0.13019
+2025-05-16 01:48:09,205 - train-rescue.py - INFO: Class 9 IoU: 0.71440
+2025-05-16 01:48:09,205 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:49:42,781 - train-rescue.py - INFO: [Epoch 34] [iter:32] Validation:
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: mIoU:45.76681 Best mIOU:45.76681 on epoch 34
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: Class 0 IoU: 0.79119
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: Class 1 IoU: 0.73497
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: Class 2 IoU: 0.40857
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: Class 3 IoU: 0.37146
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: Class 4 IoU: 0.34325
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: Class 5 IoU: 0.30848
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: Class 6 IoU: 0.45012
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: Class 7 IoU: 0.73440
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: Class 8 IoU: 0.15809
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: Class 9 IoU: 0.73381
+2025-05-16 01:49:51,586 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:51:25,563 - train-rescue.py - INFO: [Epoch 35] [iter:32] Validation:
+2025-05-16 01:51:35,356 - train-rescue.py - INFO: mIoU:44.69166 Best mIOU:45.76681 on epoch 34
+2025-05-16 01:51:35,356 - train-rescue.py - INFO: Class 0 IoU: 0.79442
+2025-05-16 01:51:35,356 - train-rescue.py - INFO: Class 1 IoU: 0.72825
+2025-05-16 01:51:35,356 - train-rescue.py - INFO: Class 2 IoU: 0.45945
+2025-05-16 01:51:35,356 - train-rescue.py - INFO: Class 3 IoU: 0.30752
+2025-05-16 01:51:35,356 - train-rescue.py - INFO: Class 4 IoU: 0.29507
+2025-05-16 01:51:35,356 - train-rescue.py - INFO: Class 5 IoU: 0.29266
+2025-05-16 01:51:35,356 - train-rescue.py - INFO: Class 6 IoU: 0.41609
+2025-05-16 01:51:35,356 - train-rescue.py - INFO: Class 7 IoU: 0.73621
+2025-05-16 01:51:35,356 - train-rescue.py - INFO: Class 8 IoU: 0.13943
+2025-05-16 01:51:35,356 - train-rescue.py - INFO: Class 9 IoU: 0.74697
+2025-05-16 01:51:35,356 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:53:08,200 - train-rescue.py - INFO: [Epoch 36] [iter:32] Validation:
+2025-05-16 01:53:16,802 - train-rescue.py - INFO: mIoU:45.20914 Best mIOU:45.76681 on epoch 34
+2025-05-16 01:53:16,802 - train-rescue.py - INFO: Class 0 IoU: 0.78652
+2025-05-16 01:53:16,802 - train-rescue.py - INFO: Class 1 IoU: 0.72197
+2025-05-16 01:53:16,802 - train-rescue.py - INFO: Class 2 IoU: 0.45047
+2025-05-16 01:53:16,802 - train-rescue.py - INFO: Class 3 IoU: 0.36616
+2025-05-16 01:53:16,802 - train-rescue.py - INFO: Class 4 IoU: 0.32290
+2025-05-16 01:53:16,802 - train-rescue.py - INFO: Class 5 IoU: 0.27699
+2025-05-16 01:53:16,802 - train-rescue.py - INFO: Class 6 IoU: 0.41837
+2025-05-16 01:53:16,802 - train-rescue.py - INFO: Class 7 IoU: 0.73974
+2025-05-16 01:53:16,802 - train-rescue.py - INFO: Class 8 IoU: 0.14814
+2025-05-16 01:53:16,802 - train-rescue.py - INFO: Class 9 IoU: 0.74174
+2025-05-16 01:53:16,802 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:54:51,196 - train-rescue.py - INFO: [Epoch 37] [iter:32] Validation:
+2025-05-16 01:55:01,079 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:55:01,080 - train-rescue.py - INFO: mIoU:45.86136 Best mIOU:45.86136 on epoch 37
+2025-05-16 01:55:01,080 - train-rescue.py - INFO: Class 0 IoU: 0.79759
+2025-05-16 01:55:01,080 - train-rescue.py - INFO: Class 1 IoU: 0.73182
+2025-05-16 01:55:01,080 - train-rescue.py - INFO: Class 2 IoU: 0.45133
+2025-05-16 01:55:01,080 - train-rescue.py - INFO: Class 3 IoU: 0.37610
+2025-05-16 01:55:01,080 - train-rescue.py - INFO: Class 4 IoU: 0.33295
+2025-05-16 01:55:01,080 - train-rescue.py - INFO: Class 5 IoU: 0.30150
+2025-05-16 01:55:01,080 - train-rescue.py - INFO: Class 6 IoU: 0.44377
+2025-05-16 01:55:01,080 - train-rescue.py - INFO: Class 7 IoU: 0.73576
+2025-05-16 01:55:01,080 - train-rescue.py - INFO: Class 8 IoU: 0.11918
+2025-05-16 01:55:01,080 - train-rescue.py - INFO: Class 9 IoU: 0.75476
+2025-05-16 01:55:01,080 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:56:33,725 - train-rescue.py - INFO: [Epoch 38] [iter:32] Validation:
+2025-05-16 01:56:42,552 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 01:56:42,553 - train-rescue.py - INFO: mIoU:46.49781 Best mIOU:46.49781 on epoch 38
+2025-05-16 01:56:42,553 - train-rescue.py - INFO: Class 0 IoU: 0.80427
+2025-05-16 01:56:42,553 - train-rescue.py - INFO: Class 1 IoU: 0.74079
+2025-05-16 01:56:42,553 - train-rescue.py - INFO: Class 2 IoU: 0.44215
+2025-05-16 01:56:42,553 - train-rescue.py - INFO: Class 3 IoU: 0.38970
+2025-05-16 01:56:42,553 - train-rescue.py - INFO: Class 4 IoU: 0.35486
+2025-05-16 01:56:42,553 - train-rescue.py - INFO: Class 5 IoU: 0.30865
+2025-05-16 01:56:42,553 - train-rescue.py - INFO: Class 6 IoU: 0.43290
+2025-05-16 01:56:42,553 - train-rescue.py - INFO: Class 7 IoU: 0.73419
+2025-05-16 01:56:42,553 - train-rescue.py - INFO: Class 8 IoU: 0.14694
+2025-05-16 01:56:42,553 - train-rescue.py - INFO: Class 9 IoU: 0.76032
+2025-05-16 01:56:42,553 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:58:16,358 - train-rescue.py - INFO: [Epoch 39] [iter:32] Validation:
+2025-05-16 01:58:26,235 - train-rescue.py - INFO: mIoU:45.81668 Best mIOU:46.49781 on epoch 38
+2025-05-16 01:58:26,235 - train-rescue.py - INFO: Class 0 IoU: 0.79652
+2025-05-16 01:58:26,235 - train-rescue.py - INFO: Class 1 IoU: 0.74203
+2025-05-16 01:58:26,235 - train-rescue.py - INFO: Class 2 IoU: 0.46984
+2025-05-16 01:58:26,235 - train-rescue.py - INFO: Class 3 IoU: 0.32885
+2025-05-16 01:58:26,235 - train-rescue.py - INFO: Class 4 IoU: 0.34825
+2025-05-16 01:58:26,235 - train-rescue.py - INFO: Class 5 IoU: 0.30140
+2025-05-16 01:58:26,235 - train-rescue.py - INFO: Class 6 IoU: 0.43647
+2025-05-16 01:58:26,236 - train-rescue.py - INFO: Class 7 IoU: 0.73402
+2025-05-16 01:58:26,236 - train-rescue.py - INFO: Class 8 IoU: 0.12289
+2025-05-16 01:58:26,236 - train-rescue.py - INFO: Class 9 IoU: 0.75955
+2025-05-16 01:58:26,236 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 01:59:58,786 - train-rescue.py - INFO: [Epoch 40] [iter:32] Validation:
+2025-05-16 02:00:07,689 - train-rescue.py - INFO: mIoU:46.44496 Best mIOU:46.49781 on epoch 38
+2025-05-16 02:00:07,689 - train-rescue.py - INFO: Class 0 IoU: 0.80379
+2025-05-16 02:00:07,689 - train-rescue.py - INFO: Class 1 IoU: 0.72888
+2025-05-16 02:00:07,689 - train-rescue.py - INFO: Class 2 IoU: 0.46935
+2025-05-16 02:00:07,689 - train-rescue.py - INFO: Class 3 IoU: 0.32538
+2025-05-16 02:00:07,689 - train-rescue.py - INFO: Class 4 IoU: 0.38460
+2025-05-16 02:00:07,689 - train-rescue.py - INFO: Class 5 IoU: 0.30626
+2025-05-16 02:00:07,689 - train-rescue.py - INFO: Class 6 IoU: 0.44944
+2025-05-16 02:00:07,689 - train-rescue.py - INFO: Class 7 IoU: 0.73099
+2025-05-16 02:00:07,689 - train-rescue.py - INFO: Class 8 IoU: 0.15693
+2025-05-16 02:00:07,689 - train-rescue.py - INFO: Class 9 IoU: 0.75332
+2025-05-16 02:00:07,689 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:01:41,518 - train-rescue.py - INFO: [Epoch 41] [iter:32] Validation:
+2025-05-16 02:01:50,359 - train-rescue.py - INFO: mIoU:46.49422 Best mIOU:46.49781 on epoch 38
+2025-05-16 02:01:50,360 - train-rescue.py - INFO: Class 0 IoU: 0.80255
+2025-05-16 02:01:50,360 - train-rescue.py - INFO: Class 1 IoU: 0.73151
+2025-05-16 02:01:50,360 - train-rescue.py - INFO: Class 2 IoU: 0.48020
+2025-05-16 02:01:50,360 - train-rescue.py - INFO: Class 3 IoU: 0.35949
+2025-05-16 02:01:50,360 - train-rescue.py - INFO: Class 4 IoU: 0.31503
+2025-05-16 02:01:50,360 - train-rescue.py - INFO: Class 5 IoU: 0.31969
+2025-05-16 02:01:50,360 - train-rescue.py - INFO: Class 6 IoU: 0.45138
+2025-05-16 02:01:50,360 - train-rescue.py - INFO: Class 7 IoU: 0.73846
+2025-05-16 02:01:50,360 - train-rescue.py - INFO: Class 8 IoU: 0.15418
+2025-05-16 02:01:50,360 - train-rescue.py - INFO: Class 9 IoU: 0.76187
+2025-05-16 02:01:50,360 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:03:24,201 - train-rescue.py - INFO: [Epoch 42] [iter:32] Validation:
+2025-05-16 02:03:32,962 - train-rescue.py - INFO: mIoU:45.57233 Best mIOU:46.49781 on epoch 38
+2025-05-16 02:03:32,962 - train-rescue.py - INFO: Class 0 IoU: 0.79058
+2025-05-16 02:03:32,962 - train-rescue.py - INFO: Class 1 IoU: 0.72761
+2025-05-16 02:03:32,962 - train-rescue.py - INFO: Class 2 IoU: 0.45944
+2025-05-16 02:03:32,962 - train-rescue.py - INFO: Class 3 IoU: 0.36113
+2025-05-16 02:03:32,962 - train-rescue.py - INFO: Class 4 IoU: 0.35503
+2025-05-16 02:03:32,962 - train-rescue.py - INFO: Class 5 IoU: 0.29044
+2025-05-16 02:03:32,962 - train-rescue.py - INFO: Class 6 IoU: 0.41686
+2025-05-16 02:03:32,962 - train-rescue.py - INFO: Class 7 IoU: 0.74041
+2025-05-16 02:03:32,962 - train-rescue.py - INFO: Class 8 IoU: 0.13448
+2025-05-16 02:03:32,962 - train-rescue.py - INFO: Class 9 IoU: 0.73697
+2025-05-16 02:03:32,962 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:05:06,630 - train-rescue.py - INFO: [Epoch 43] [iter:32] Validation:
+2025-05-16 02:05:16,463 - train-rescue.py - INFO: mIoU:45.72225 Best mIOU:46.49781 on epoch 38
+2025-05-16 02:05:16,464 - train-rescue.py - INFO: Class 0 IoU: 0.79374
+2025-05-16 02:05:16,464 - train-rescue.py - INFO: Class 1 IoU: 0.74201
+2025-05-16 02:05:16,464 - train-rescue.py - INFO: Class 2 IoU: 0.49847
+2025-05-16 02:05:16,464 - train-rescue.py - INFO: Class 3 IoU: 0.31751
+2025-05-16 02:05:16,464 - train-rescue.py - INFO: Class 4 IoU: 0.33644
+2025-05-16 02:05:16,464 - train-rescue.py - INFO: Class 5 IoU: 0.25723
+2025-05-16 02:05:16,464 - train-rescue.py - INFO: Class 6 IoU: 0.45820
+2025-05-16 02:05:16,464 - train-rescue.py - INFO: Class 7 IoU: 0.73430
+2025-05-16 02:05:16,464 - train-rescue.py - INFO: Class 8 IoU: 0.14320
+2025-05-16 02:05:16,464 - train-rescue.py - INFO: Class 9 IoU: 0.74835
+2025-05-16 02:05:16,464 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:06:49,115 - train-rescue.py - INFO: [Epoch 44] [iter:32] Validation:
+2025-05-16 02:06:58,998 - train-rescue.py - INFO: mIoU:46.42052 Best mIOU:46.49781 on epoch 38
+2025-05-16 02:06:58,998 - train-rescue.py - INFO: Class 0 IoU: 0.79040
+2025-05-16 02:06:58,998 - train-rescue.py - INFO: Class 1 IoU: 0.72861
+2025-05-16 02:06:58,998 - train-rescue.py - INFO: Class 2 IoU: 0.47751
+2025-05-16 02:06:58,999 - train-rescue.py - INFO: Class 3 IoU: 0.37765
+2025-05-16 02:06:58,999 - train-rescue.py - INFO: Class 4 IoU: 0.37483
+2025-05-16 02:06:58,999 - train-rescue.py - INFO: Class 5 IoU: 0.28761
+2025-05-16 02:06:58,999 - train-rescue.py - INFO: Class 6 IoU: 0.45106
+2025-05-16 02:06:58,999 - train-rescue.py - INFO: Class 7 IoU: 0.73797
+2025-05-16 02:06:58,999 - train-rescue.py - INFO: Class 8 IoU: 0.14433
+2025-05-16 02:06:58,999 - train-rescue.py - INFO: Class 9 IoU: 0.73629
+2025-05-16 02:06:58,999 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:08:31,480 - train-rescue.py - INFO: [Epoch 45] [iter:32] Validation:
+2025-05-16 02:08:41,352 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 02:08:41,353 - train-rescue.py - INFO: mIoU:46.88312 Best mIOU:46.88312 on epoch 45
+2025-05-16 02:08:41,353 - train-rescue.py - INFO: Class 0 IoU: 0.79135
+2025-05-16 02:08:41,353 - train-rescue.py - INFO: Class 1 IoU: 0.72857
+2025-05-16 02:08:41,353 - train-rescue.py - INFO: Class 2 IoU: 0.46282
+2025-05-16 02:08:41,353 - train-rescue.py - INFO: Class 3 IoU: 0.38279
+2025-05-16 02:08:41,353 - train-rescue.py - INFO: Class 4 IoU: 0.38222
+2025-05-16 02:08:41,353 - train-rescue.py - INFO: Class 5 IoU: 0.30184
+2025-05-16 02:08:41,353 - train-rescue.py - INFO: Class 6 IoU: 0.46274
+2025-05-16 02:08:41,353 - train-rescue.py - INFO: Class 7 IoU: 0.73192
+2025-05-16 02:08:41,353 - train-rescue.py - INFO: Class 8 IoU: 0.15289
+2025-05-16 02:08:41,353 - train-rescue.py - INFO: Class 9 IoU: 0.76002
+2025-05-16 02:08:41,353 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:10:14,531 - train-rescue.py - INFO: [Epoch 46] [iter:32] Validation:
+2025-05-16 02:10:24,390 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 02:10:24,390 - train-rescue.py - INFO: mIoU:47.26475 Best mIOU:47.26475 on epoch 46
+2025-05-16 02:10:24,390 - train-rescue.py - INFO: Class 0 IoU: 0.80973
+2025-05-16 02:10:24,390 - train-rescue.py - INFO: Class 1 IoU: 0.74879
+2025-05-16 02:10:24,390 - train-rescue.py - INFO: Class 2 IoU: 0.45593
+2025-05-16 02:10:24,390 - train-rescue.py - INFO: Class 3 IoU: 0.42105
+2025-05-16 02:10:24,390 - train-rescue.py - INFO: Class 4 IoU: 0.37594
+2025-05-16 02:10:24,390 - train-rescue.py - INFO: Class 5 IoU: 0.29195
+2025-05-16 02:10:24,390 - train-rescue.py - INFO: Class 6 IoU: 0.43627
+2025-05-16 02:10:24,391 - train-rescue.py - INFO: Class 7 IoU: 0.73691
+2025-05-16 02:10:24,391 - train-rescue.py - INFO: Class 8 IoU: 0.15651
+2025-05-16 02:10:24,391 - train-rescue.py - INFO: Class 9 IoU: 0.76603
+2025-05-16 02:10:24,391 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:11:57,010 - train-rescue.py - INFO: [Epoch 47] [iter:32] Validation:
+2025-05-16 02:12:06,822 - train-rescue.py - INFO: mIoU:47.03578 Best mIOU:47.26475 on epoch 46
+2025-05-16 02:12:06,822 - train-rescue.py - INFO: Class 0 IoU: 0.81211
+2025-05-16 02:12:06,822 - train-rescue.py - INFO: Class 1 IoU: 0.73020
+2025-05-16 02:12:06,822 - train-rescue.py - INFO: Class 2 IoU: 0.48261
+2025-05-16 02:12:06,822 - train-rescue.py - INFO: Class 3 IoU: 0.32750
+2025-05-16 02:12:06,822 - train-rescue.py - INFO: Class 4 IoU: 0.40106
+2025-05-16 02:12:06,822 - train-rescue.py - INFO: Class 5 IoU: 0.27573
+2025-05-16 02:12:06,822 - train-rescue.py - INFO: Class 6 IoU: 0.43989
+2025-05-16 02:12:06,822 - train-rescue.py - INFO: Class 7 IoU: 0.74607
+2025-05-16 02:12:06,822 - train-rescue.py - INFO: Class 8 IoU: 0.18253
+2025-05-16 02:12:06,822 - train-rescue.py - INFO: Class 9 IoU: 0.77623
+2025-05-16 02:12:06,822 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:13:39,788 - train-rescue.py - INFO: [Epoch 48] [iter:32] Validation:
+2025-05-16 02:13:48,713 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 02:13:48,713 - train-rescue.py - INFO: mIoU:47.82536 Best mIOU:47.82536 on epoch 48
+2025-05-16 02:13:48,713 - train-rescue.py - INFO: Class 0 IoU: 0.81062
+2025-05-16 02:13:48,713 - train-rescue.py - INFO: Class 1 IoU: 0.74657
+2025-05-16 02:13:48,713 - train-rescue.py - INFO: Class 2 IoU: 0.45547
+2025-05-16 02:13:48,714 - train-rescue.py - INFO: Class 3 IoU: 0.38374
+2025-05-16 02:13:48,714 - train-rescue.py - INFO: Class 4 IoU: 0.38044
+2025-05-16 02:13:48,714 - train-rescue.py - INFO: Class 5 IoU: 0.31816
+2025-05-16 02:13:48,714 - train-rescue.py - INFO: Class 6 IoU: 0.47141
+2025-05-16 02:13:48,714 - train-rescue.py - INFO: Class 7 IoU: 0.74030
+2025-05-16 02:13:48,714 - train-rescue.py - INFO: Class 8 IoU: 0.18805
+2025-05-16 02:13:48,714 - train-rescue.py - INFO: Class 9 IoU: 0.76603
+2025-05-16 02:13:48,714 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:15:22,298 - train-rescue.py - INFO: [Epoch 49] [iter:32] Validation:
+2025-05-16 02:15:32,265 - train-rescue.py - INFO: mIoU:46.74206 Best mIOU:47.82536 on epoch 48
+2025-05-16 02:15:32,265 - train-rescue.py - INFO: Class 0 IoU: 0.79438
+2025-05-16 02:15:32,265 - train-rescue.py - INFO: Class 1 IoU: 0.73467
+2025-05-16 02:15:32,265 - train-rescue.py - INFO: Class 2 IoU: 0.50041
+2025-05-16 02:15:32,265 - train-rescue.py - INFO: Class 3 IoU: 0.40239
+2025-05-16 02:15:32,265 - train-rescue.py - INFO: Class 4 IoU: 0.38702
+2025-05-16 02:15:32,265 - train-rescue.py - INFO: Class 5 IoU: 0.26506
+2025-05-16 02:15:32,265 - train-rescue.py - INFO: Class 6 IoU: 0.41919
+2025-05-16 02:15:32,265 - train-rescue.py - INFO: Class 7 IoU: 0.73299
+2025-05-16 02:15:32,265 - train-rescue.py - INFO: Class 8 IoU: 0.16717
+2025-05-16 02:15:32,265 - train-rescue.py - INFO: Class 9 IoU: 0.73833
+2025-05-16 02:15:32,265 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:17:04,790 - train-rescue.py - INFO: [Epoch 50] [iter:32] Validation:
+2025-05-16 02:17:13,610 - train-rescue.py - INFO: mIoU:47.27889 Best mIOU:47.82536 on epoch 48
+2025-05-16 02:17:13,610 - train-rescue.py - INFO: Class 0 IoU: 0.79445
+2025-05-16 02:17:13,610 - train-rescue.py - INFO: Class 1 IoU: 0.74068
+2025-05-16 02:17:13,611 - train-rescue.py - INFO: Class 2 IoU: 0.48925
+2025-05-16 02:17:13,611 - train-rescue.py - INFO: Class 3 IoU: 0.39897
+2025-05-16 02:17:13,611 - train-rescue.py - INFO: Class 4 IoU: 0.41151
+2025-05-16 02:17:13,611 - train-rescue.py - INFO: Class 5 IoU: 0.28459
+2025-05-16 02:17:13,611 - train-rescue.py - INFO: Class 6 IoU: 0.43076
+2025-05-16 02:17:13,611 - train-rescue.py - INFO: Class 7 IoU: 0.73967
+2025-05-16 02:17:13,611 - train-rescue.py - INFO: Class 8 IoU: 0.17513
+2025-05-16 02:17:13,611 - train-rescue.py - INFO: Class 9 IoU: 0.73567
+2025-05-16 02:17:13,611 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:18:47,588 - train-rescue.py - INFO: [Epoch 51] [iter:32] Validation:
+2025-05-16 02:18:57,591 - train-rescue.py - INFO: mIoU:47.53614 Best mIOU:47.82536 on epoch 48
+2025-05-16 02:18:57,592 - train-rescue.py - INFO: Class 0 IoU: 0.81022
+2025-05-16 02:18:57,592 - train-rescue.py - INFO: Class 1 IoU: 0.71860
+2025-05-16 02:18:57,592 - train-rescue.py - INFO: Class 2 IoU: 0.51509
+2025-05-16 02:18:57,592 - train-rescue.py - INFO: Class 3 IoU: 0.40645
+2025-05-16 02:18:57,592 - train-rescue.py - INFO: Class 4 IoU: 0.40670
+2025-05-16 02:18:57,592 - train-rescue.py - INFO: Class 5 IoU: 0.30116
+2025-05-16 02:18:57,592 - train-rescue.py - INFO: Class 6 IoU: 0.41141
+2025-05-16 02:18:57,592 - train-rescue.py - INFO: Class 7 IoU: 0.73031
+2025-05-16 02:18:57,592 - train-rescue.py - INFO: Class 8 IoU: 0.16926
+2025-05-16 02:18:57,592 - train-rescue.py - INFO: Class 9 IoU: 0.75975
+2025-05-16 02:18:57,592 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:20:30,163 - train-rescue.py - INFO: [Epoch 52] [iter:32] Validation:
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: mIoU:47.99253 Best mIOU:47.99253 on epoch 52
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: Class 0 IoU: 0.80162
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: Class 1 IoU: 0.75056
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: Class 2 IoU: 0.51789
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: Class 3 IoU: 0.39716
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: Class 4 IoU: 0.40136
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: Class 5 IoU: 0.31499
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: Class 6 IoU: 0.43964
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: Class 7 IoU: 0.73769
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: Class 8 IoU: 0.16248
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: Class 9 IoU: 0.75580
+2025-05-16 02:20:40,200 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:22:12,776 - train-rescue.py - INFO: [Epoch 53] [iter:32] Validation:
+2025-05-16 02:22:21,578 - train-rescue.py - INFO: New best mIoU found. Model weights saved.
+2025-05-16 02:22:21,579 - train-rescue.py - INFO: mIoU:48.07220 Best mIOU:48.07220 on epoch 53
+2025-05-16 02:22:21,579 - train-rescue.py - INFO: Class 0 IoU: 0.80875
+2025-05-16 02:22:21,579 - train-rescue.py - INFO: Class 1 IoU: 0.77033
+2025-05-16 02:22:21,579 - train-rescue.py - INFO: Class 2 IoU: 0.49681
+2025-05-16 02:22:21,579 - train-rescue.py - INFO: Class 3 IoU: 0.31534
+2025-05-16 02:22:21,579 - train-rescue.py - INFO: Class 4 IoU: 0.38903
+2025-05-16 02:22:21,579 - train-rescue.py - INFO: Class 5 IoU: 0.33517
+2025-05-16 02:22:21,579 - train-rescue.py - INFO: Class 6 IoU: 0.45666
+2025-05-16 02:22:21,579 - train-rescue.py - INFO: Class 7 IoU: 0.73600
+2025-05-16 02:22:21,579 - train-rescue.py - INFO: Class 8 IoU: 0.20666
+2025-05-16 02:22:21,579 - train-rescue.py - INFO: Class 9 IoU: 0.77319
+2025-05-16 02:22:21,579 - train-rescue.py - INFO: Class 10 IoU: 0.00000
+2025-05-16 02:23:55,035 - train-rescue.py - INFO: [Epoch 54] [iter:32] Validation:
+2025-05-16 02:24:04,883 - train-rescue.py - INFO: mIoU:47.93407 Best mIOU:48.07220 on epoch 53
+2025-05-16 02:24:04,884 - train-rescue.py - INFO: Class 0 IoU: 0.80923
+2025-05-16 02:24:04,884 - train-rescue.py - INFO: Class 1 IoU: 0.74295
+2025-05-16 02:24:04,884 - train-rescue.py - INFO: Class 2 IoU: 0.51560
+2025-05-16 02:24:04,884 - train-rescue.py - INFO: Class 3 IoU: 0.36720
+2025-05-16 02:24:04,884 - train-rescue.py - INFO: Class 4 IoU: 0.41312
+2025-05-16 02:24:04,884 - train-rescue.py - INFO: Class 5 IoU: 0.31910
+2025-05-16 02:24:04,884 - train-rescue.py - INFO: Class 6 IoU: 0.45383
+2025-05-16 02:24:04,884 - train-rescue.py - INFO: Class 7 IoU: 0.73760
+2025-05-16 02:24:04,884 - train-rescue.py - INFO: Class 8 IoU: 0.15446
+2025-05-16 02:24:04,884 - train-rescue.py - INFO: Class 9 IoU: 0.75966
+2025-05-16 02:24:04,884 - train-rescue.py - INFO: Class 10 IoU: 0.00000

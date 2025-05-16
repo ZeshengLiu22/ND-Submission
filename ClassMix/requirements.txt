@@ -1,0 +1,8 @@
+numpy==1.23.5
+torch==1.12.1
+torchvision==0.13.1
+kornia==0.6.7
+tensorboard==2.10.1
+tqdm==4.64.1
+opencv-python==4.6.0.66
+scipy==1.8.1
